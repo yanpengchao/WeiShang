@@ -19,6 +19,10 @@
 		FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFB4B581CBFF1BA00F09EAA /* MainPageViewController.xib */; };
 		FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B5C1CBFF51300F09EAA /* WebViewController.m */; };
 		FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFB4B5D1CBFF51300F09EAA /* WebViewController.xib */; };
+		FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B621CBFFA3300F09EAA /* BasicTableViewController.m */; };
+		FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B671CBFFA5E00F09EAA /* BasicViewController.m */; };
+		FFFB4B711CBFFBBF00F09EAA /* ProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B6F1CBFFBBF00F09EAA /* ProductsListViewController.m */; };
+		FFFB4B721CBFFBBF00F09EAA /* ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFB4B701CBFFBBF00F09EAA /* ProductsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,13 @@
 		FFFB4B5B1CBFF51300F09EAA /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = Controllers/MainPage/WebViewController.h; sourceTree = "<group>"; };
 		FFFB4B5C1CBFF51300F09EAA /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = Controllers/MainPage/WebViewController.m; sourceTree = "<group>"; };
 		FFFB4B5D1CBFF51300F09EAA /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = Controllers/MainPage/WebViewController.xib; sourceTree = "<group>"; };
+		FFFB4B611CBFFA3300F09EAA /* BasicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicTableViewController.h; path = Controllers/Common/BasicTableViewController.h; sourceTree = "<group>"; };
+		FFFB4B621CBFFA3300F09EAA /* BasicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicTableViewController.m; path = Controllers/Common/BasicTableViewController.m; sourceTree = "<group>"; };
+		FFFB4B661CBFFA5E00F09EAA /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		FFFB4B671CBFFA5E00F09EAA /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		FFFB4B6E1CBFFBBF00F09EAA /* ProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductsListViewController.h; path = Controllers/Products/ProductsListViewController.h; sourceTree = "<group>"; };
+		FFFB4B6F1CBFFBBF00F09EAA /* ProductsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductsListViewController.m; path = Controllers/Products/ProductsListViewController.m; sourceTree = "<group>"; };
+		FFFB4B701CBFFBBF00F09EAA /* ProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductsListViewController.xib; path = Controllers/Products/ProductsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,7 @@
 		FFD30AF71CBFEB59006DE031 /* WeiShang */ = {
 			isa = PBXGroup;
 			children = (
+				FFFB4B731CBFFC0F00F09EAA /* ThirdParts */,
 				FFD30B111CBFED0D006DE031 /* Models */,
 				FFD30B101CBFECFC006DE031 /* Controllers */,
 				FFD30B0F1CBFECED006DE031 /* Views */,
@@ -107,6 +119,7 @@
 		FFD30B101CBFECFC006DE031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FFFB4B601CBFF9A700F09EAA /* Products */,
 				FFD30B121CBFED33006DE031 /* Common */,
 				FFFB4B551CBFF14B00F09EAA /* MainPage */,
 			);
@@ -132,6 +145,10 @@
 				FFD30B161CBFED5B006DE031 /* PCNavigationViewController.m */,
 				FFD30B181CBFED5B006DE031 /* ViewController.h */,
 				FFD30B191CBFED5B006DE031 /* ViewController.m */,
+				FFFB4B611CBFFA3300F09EAA /* BasicTableViewController.h */,
+				FFFB4B621CBFFA3300F09EAA /* BasicTableViewController.m */,
+				FFFB4B661CBFFA5E00F09EAA /* BasicViewController.h */,
+				FFFB4B671CBFFA5E00F09EAA /* BasicViewController.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -177,6 +194,23 @@
 				FFFB4B5D1CBFF51300F09EAA /* WebViewController.xib */,
 			);
 			name = MainPage;
+			sourceTree = "<group>";
+		};
+		FFFB4B601CBFF9A700F09EAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB4B6E1CBFFBBF00F09EAA /* ProductsListViewController.h */,
+				FFFB4B6F1CBFFBBF00F09EAA /* ProductsListViewController.m */,
+				FFFB4B701CBFFBBF00F09EAA /* ProductsListViewController.xib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFB4B731CBFFC0F00F09EAA /* ThirdParts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdParts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD30B081CBFEB59006DE031 /* LaunchScreen.storyboard in Resources */,
+				FFFB4B721CBFFBBF00F09EAA /* ProductsListViewController.xib in Resources */,
 				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
 				FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */,
 				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
@@ -253,6 +288,9 @@
 				FFD30B201CBFED98006DE031 /* UIImage+Creation.m in Sources */,
 				FFD30AFD1CBFEB59006DE031 /* AppDelegate.m in Sources */,
 				FFD30B1B1CBFED5B006DE031 /* PCNavigationViewController.m in Sources */,
+				FFFB4B711CBFFBBF00F09EAA /* ProductsListViewController.m in Sources */,
+				FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */,
+				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
 				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
 				FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */,

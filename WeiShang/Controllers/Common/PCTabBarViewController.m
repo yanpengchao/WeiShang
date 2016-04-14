@@ -10,6 +10,7 @@
 #import "UIImage+Creation.h"
 #import "PCNavigationViewController.h"
 #import "MainPageViewController.h"
+#import "ProductsListViewController.h"
 #import "ViewController.h"
 
 @interface PCTabBarViewController ()
@@ -58,7 +59,7 @@
     [self navigationVCComPare:nav0 SetTitle:titleArray[0] image:imageArray[0] selImage:seletedImageArray[0]];
     
     // 产品
-    UIViewController *vc1 = [[UIViewController alloc] init];
+    ProductsListViewController *vc1 = [[ProductsListViewController alloc] init];
     PCNavigationViewController *nav1 = [[PCNavigationViewController alloc]initWithRootViewController:vc1];
     [self navigationVCComPare:nav1 SetTitle:titleArray[1] image:imageArray[1] selImage:seletedImageArray[1]];
     
