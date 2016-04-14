@@ -9,6 +9,7 @@
 #import "PCTabBarViewController.h"
 #import "UIImage+Creation.h"
 #import "PCNavigationViewController.h"
+#import "MainPageViewController.h"
 #import "ViewController.h"
 
 @interface PCTabBarViewController ()
@@ -52,7 +53,7 @@
     NSArray *seletedImageArray = @[@"tabIcon1", @"tabIcon2", @"tabIcon3", @"tabIcon4", @"tabIcon5"];
     
     // 我的
-    UIViewController *vc0 = [[UIViewController alloc] init];
+    MainPageViewController *vc0 = [[MainPageViewController alloc] init];
     PCNavigationViewController *nav0 = [[PCNavigationViewController alloc]initWithRootViewController:vc0];
     [self navigationVCComPare:nav0 SetTitle:titleArray[0] image:imageArray[0] selImage:seletedImageArray[0]];
     

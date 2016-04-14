@@ -15,6 +15,10 @@
 		FFD30B1B1CBFED5B006DE031 /* PCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30B161CBFED5B006DE031 /* PCNavigationViewController.m */; };
 		FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30B191CBFED5B006DE031 /* ViewController.m */; };
 		FFD30B201CBFED98006DE031 /* UIImage+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30B1E1CBFED98006DE031 /* UIImage+Creation.m */; };
+		FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B571CBFF1BA00F09EAA /* MainPageViewController.m */; };
+		FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFB4B581CBFF1BA00F09EAA /* MainPageViewController.xib */; };
+		FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B5C1CBFF51300F09EAA /* WebViewController.m */; };
+		FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFB4B5D1CBFF51300F09EAA /* WebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,12 @@
 		FFD30B191CBFED5B006DE031 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/Common/ViewController.m; sourceTree = "<group>"; };
 		FFD30B1E1CBFED98006DE031 /* UIImage+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Creation.m"; path = "Views/Common/UIImage+Creation.m"; sourceTree = "<group>"; };
 		FFD30B1F1CBFED98006DE031 /* UIImage+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Creation.h"; path = "Views/Common/UIImage+Creation.h"; sourceTree = "<group>"; };
+		FFFB4B561CBFF1BA00F09EAA /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainPageViewController.h; path = Controllers/MainPage/MainPageViewController.h; sourceTree = "<group>"; };
+		FFFB4B571CBFF1BA00F09EAA /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageViewController.m; path = Controllers/MainPage/MainPageViewController.m; sourceTree = "<group>"; };
+		FFFB4B581CBFF1BA00F09EAA /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPageViewController.xib; path = Controllers/MainPage/MainPageViewController.xib; sourceTree = "<group>"; };
+		FFFB4B5B1CBFF51300F09EAA /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = Controllers/MainPage/WebViewController.h; sourceTree = "<group>"; };
+		FFFB4B5C1CBFF51300F09EAA /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = Controllers/MainPage/WebViewController.m; sourceTree = "<group>"; };
+		FFFB4B5D1CBFF51300F09EAA /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = Controllers/MainPage/WebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				FFD30B121CBFED33006DE031 /* Common */,
+				FFFB4B551CBFF14B00F09EAA /* MainPage */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -105,6 +116,9 @@
 		FFD30B111CBFED0D006DE031 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FFFB4B541CBFF10600F09EAA /* DataSource */,
+				FFFB4B531CBFF0F500F09EAA /* NetWork */,
+				FFFB4B521CBFF0EE00F09EAA /* DAO */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -112,10 +126,10 @@
 		FFD30B121CBFED33006DE031 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FFD30B171CBFED5B006DE031 /* PCTabBarViewController.h */,
 				FFD30B141CBFED5B006DE031 /* PCTabBarViewController.m */,
 				FFD30B151CBFED5B006DE031 /* PCNavigationViewController.h */,
 				FFD30B161CBFED5B006DE031 /* PCNavigationViewController.m */,
-				FFD30B171CBFED5B006DE031 /* PCTabBarViewController.h */,
 				FFD30B181CBFED5B006DE031 /* ViewController.h */,
 				FFD30B191CBFED5B006DE031 /* ViewController.m */,
 			);
@@ -129,6 +143,40 @@
 				FFD30B1F1CBFED98006DE031 /* UIImage+Creation.h */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		FFFB4B521CBFF0EE00F09EAA /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		FFFB4B531CBFF0F500F09EAA /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		FFFB4B541CBFF10600F09EAA /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		FFFB4B551CBFF14B00F09EAA /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				FFFB4B561CBFF1BA00F09EAA /* MainPageViewController.h */,
+				FFFB4B571CBFF1BA00F09EAA /* MainPageViewController.m */,
+				FFFB4B581CBFF1BA00F09EAA /* MainPageViewController.xib */,
+				FFFB4B5B1CBFF51300F09EAA /* WebViewController.h */,
+				FFFB4B5C1CBFF51300F09EAA /* WebViewController.m */,
+				FFFB4B5D1CBFF51300F09EAA /* WebViewController.xib */,
+			);
+			name = MainPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD30B081CBFEB59006DE031 /* LaunchScreen.storyboard in Resources */,
+				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
 				FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */,
+				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +253,9 @@
 				FFD30B201CBFED98006DE031 /* UIImage+Creation.m in Sources */,
 				FFD30AFD1CBFEB59006DE031 /* AppDelegate.m in Sources */,
 				FFD30B1B1CBFED5B006DE031 /* PCNavigationViewController.m in Sources */,
+				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
+				FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
 			);
@@ -348,6 +400,7 @@
 				FFD30B0E1CBFEB59006DE031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
