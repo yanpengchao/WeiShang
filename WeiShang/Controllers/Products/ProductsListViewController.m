@@ -10,7 +10,9 @@
 #import "DFTimelineView.h"
 #import "UserViewController.h"
 
-@interface ProductsListViewController ()
+@interface ProductsListViewController () <UISearchBarDelegate, UIScrollViewDelegate>
+
+@property (nonatomic, strong)UISearchBar* customSearchBar;
 
 @end
 
@@ -23,8 +25,75 @@
     
     [self initData];
     
-    [self setHeader];
+//    [self setHeader];
+    // 去掉头部
+    self.tableView.tableHeaderView = nil;
     
+    [self addNaviRightButton];
+}
+
+- (void)addNaviRightButton
+{
+    UIBarButtonItem* searchButon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                                                                                 target:self
+                                                                                 action:@selector(showSearchBar)];
+    self.navigationItem.rightBarButtonItem = searchButon;
+}
+
+- (void)showSearchBar
+{
+    [self showSearchBar:@YES];
+}
+
+- (void)hideSearchBar
+{
+    [self showSearchBar:@NO];
+}
+
+- (void)showSearchBar:(NSNumber*)show
+{
+    static BOOL showStatus = NO;
+    if (showStatus == [show boolValue]) {
+        return ;
+    }
+    
+    showStatus = [show boolValue];
+    
+    [UIView animateWithDuration:.3 animations:^{
+        CGRect mainViewBounds = self.navigationController.view.bounds;
+        if ([show boolValue]) {
+            [self.customSearchBar setFrame:CGRectMake(CGRectGetMinX(mainViewBounds),
+                                                      CGRectGetMinY(mainViewBounds) + 20,
+                                                      mainViewBounds.size.width,
+                                                      44)];
+            [self.customSearchBar becomeFirstResponder];
+        }
+        else {
+            [self.customSearchBar setFrame:CGRectMake(CGRectGetMinX(mainViewBounds) + mainViewBounds.size.width,
+                                                      CGRectGetMinY(mainViewBounds) + 20,
+                                                      mainViewBounds.size.width,
+                                                      44)];
+            [self.customSearchBar resignFirstResponder];
+        }
+    }];
+}
+
+- (UISearchBar*)customSearchBar
+{
+    if (_customSearchBar == nil) {
+        CGRect mainViewBounds = self.navigationController.view.bounds;
+        _customSearchBar = [[UISearchBar alloc]
+                            initWithFrame:CGRectMake(CGRectGetMinX(mainViewBounds) + mainViewBounds.size.width,
+                                                     CGRectGetMinY(mainViewBounds) + 20,
+                                                     mainViewBounds.size.width,
+                                                     44)];
+        _customSearchBar.delegate = self;
+        _customSearchBar.showsCancelButton = YES;
+        
+        [self.navigationController.view addSubview:self.customSearchBar];
+    }
+    
+    return _customSearchBar;
 }
 
 -(void) setHeader
@@ -40,7 +109,6 @@
     [self setUserSign:@"梦想还是要有的 万一实现了呢"];
     
 }
-
 
 -(void) initData
 {
@@ -340,6 +408,40 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UIScrollViewDelegate functions
+
+// called on start of dragging (may require some time and or distance to move)
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self hideSearchBar];
+}
+
+#pragma mark - UITableViewDelegate functions
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([super respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+        [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
+    
+    [self hideSearchBar];
+}
+
+#pragma mark - UISearchBarDelegate functions
+
+// called when keyboard search button pressed
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [self.customSearchBar resignFirstResponder];
+    
+    // TODO:搜索点东西吧
+}
+
+// called when cancel button pressed
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    [self hideSearchBar];
 }
 
 @end
