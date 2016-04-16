@@ -1,0 +1,17 @@
+//
+//  WeiShang-Prefix.pch
+//  WeiShang
+//
+//  Created by 鄢彭超 on 16/4/16.
+//  Copyright © 2016年 鄢彭超. All rights reserved.
+//
+
+#ifndef WeiShang_Prefix_pch
+#define WeiShang_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#endif /* WeiShang_Prefix_pch */

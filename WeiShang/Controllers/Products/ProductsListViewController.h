@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BasicTableViewController.h"
+#import "DFTimeLineViewController.h"
 
-@interface ProductsListViewController : BasicTableViewController
+@interface ProductsListViewController : DFTimeLineViewController
 
 @end
