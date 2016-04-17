@@ -7,8 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPageViewController">
             <connections>
+                <outlet property="scrollView" destination="1SL-I6-7gt" id="MHA-G4-oC8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="webView" destination="GuG-AG-6v9" id="pgE-7e-Ncz"/>
+                <outlet property="webView1" destination="GuG-AG-6v9" id="iVa-3O-tam"/>
+                <outlet property="webView2" destination="XG6-dM-3t6" id="iyy-Xi-BWJ"/>
+                <outlet property="webView3" destination="Q4r-Q6-pl1" id="llH-NA-w9y"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,21 +19,66 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-AG-6v9">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SL-I6-7gt">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuG-AG-6v9" userLabel="page1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="tTp-I1-A4D"/>
+                            </connections>
+                        </webView>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-dM-3t6" userLabel="page2">
+                            <rect key="frame" x="375" y="0.0" width="375" height="603"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="1aG-O8-w5g"/>
+                            </connections>
+                        </webView>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-Q6-pl1" userLabel="page3">
+                            <rect key="frame" x="750" y="0.0" width="375" height="603"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="iKY-2j-W2Z"/>
+                            </connections>
+                        </webView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XG6-dM-3t6" firstAttribute="leading" secondItem="GuG-AG-6v9" secondAttribute="leading" id="0ot-oS-Did"/>
+                        <constraint firstItem="GuG-AG-6v9" firstAttribute="leading" secondItem="1SL-I6-7gt" secondAttribute="leading" id="KSf-FV-nJ2"/>
+                        <constraint firstItem="GuG-AG-6v9" firstAttribute="width" secondItem="1SL-I6-7gt" secondAttribute="width" id="Lpv-Fu-Fqv"/>
+                        <constraint firstItem="XG6-dM-3t6" firstAttribute="top" secondItem="GuG-AG-6v9" secondAttribute="top" id="NRh-sB-xZS"/>
+                        <constraint firstItem="GuG-AG-6v9" firstAttribute="height" secondItem="1SL-I6-7gt" secondAttribute="height" id="U0V-XU-yff"/>
+                        <constraint firstAttribute="trailing" secondItem="Q4r-Q6-pl1" secondAttribute="trailing" id="WrF-vz-IoP"/>
+                        <constraint firstItem="Q4r-Q6-pl1" firstAttribute="width" secondItem="1SL-I6-7gt" secondAttribute="width" id="cJu-by-7sQ"/>
+                        <constraint firstItem="XG6-dM-3t6" firstAttribute="leading" secondItem="GuG-AG-6v9" secondAttribute="trailing" id="csy-BO-vC2"/>
+                        <constraint firstItem="Q4r-Q6-pl1" firstAttribute="height" secondItem="1SL-I6-7gt" secondAttribute="height" id="eDn-Gc-6fh"/>
+                        <constraint firstItem="GuG-AG-6v9" firstAttribute="top" secondItem="1SL-I6-7gt" secondAttribute="top" id="eO2-JH-7e4"/>
+                        <constraint firstItem="XG6-dM-3t6" firstAttribute="width" secondItem="1SL-I6-7gt" secondAttribute="width" id="hLd-ci-FQU"/>
+                        <constraint firstItem="XG6-dM-3t6" firstAttribute="height" secondItem="1SL-I6-7gt" secondAttribute="height" id="hYx-xL-1q4"/>
+                        <constraint firstItem="Q4r-Q6-pl1" firstAttribute="leading" secondItem="XG6-dM-3t6" secondAttribute="trailing" id="s4R-VU-gbC"/>
+                        <constraint firstAttribute="bottom" secondItem="GuG-AG-6v9" secondAttribute="bottom" id="xro-ov-Qgm"/>
+                        <constraint firstItem="Q4r-Q6-pl1" firstAttribute="top" secondItem="XG6-dM-3t6" secondAttribute="top" id="yBT-9a-kiX"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0ot-oS-Did"/>
+                        </mask>
+                    </variation>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="D5j-Ci-ZPN"/>
+                        <outlet property="delegate" destination="-1" id="F9L-j0-Pkh"/>
                     </connections>
-                </webView>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="GuG-AG-6v9" secondAttribute="trailing" id="4Ao-7u-3YH"/>
-                <constraint firstAttribute="bottom" secondItem="GuG-AG-6v9" secondAttribute="bottom" id="CC1-DN-nyg"/>
-                <constraint firstItem="GuG-AG-6v9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VoY-ex-jr3"/>
-                <constraint firstItem="GuG-AG-6v9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vO4-Qk-nBa"/>
+                <constraint firstItem="1SL-I6-7gt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="58N-C8-TkU"/>
+                <constraint firstItem="1SL-I6-7gt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="NsV-oq-JKV"/>
+                <constraint firstAttribute="trailing" secondItem="1SL-I6-7gt" secondAttribute="trailing" id="Pil-qQ-Ddg"/>
+                <constraint firstAttribute="bottom" secondItem="1SL-I6-7gt" secondAttribute="bottom" id="XhO-j9-3je"/>
             </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

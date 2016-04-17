@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BasicViewController.h"
 
-@interface MainPageViewController : BasicViewController <UIWebViewDelegate>
+@interface MainPageViewController : BasicViewController <UIWebViewDelegate, UIScrollViewDelegate>
 
 @end

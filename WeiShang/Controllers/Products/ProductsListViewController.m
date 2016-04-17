@@ -32,6 +32,8 @@
     [self addNaviRightButton];
 }
 
+#pragma mark - 导航栏的搜索框定制
+
 - (void)addNaviRightButton
 {
     UIBarButtonItem* searchButon = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
@@ -95,6 +97,8 @@
     
     return _customSearchBar;
 }
+
+#pragma mark - 朋友圈相关接口
 
 -(void) setHeader
 {
