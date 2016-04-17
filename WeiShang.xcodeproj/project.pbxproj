@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		71EE53DC70E3D5E214CDDB02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD06D6A9B584D977DFF6764C /* libPods.a */; };
 		FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CD11CC1F7FA0035C619 /* UserViewController.m */; };
+		FF095CD71CC387730035C619 /* AgentsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CD51CC387730035C619 /* AgentsListViewController.m */; };
+		FF095CD81CC387730035C619 /* AgentsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF095CD61CC387730035C619 /* AgentsListViewController.xib */; };
+		FF095CDE1CC388120035C619 /* AgentInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CDC1CC388120035C619 /* AgentInfoTableViewCell.m */; };
+		FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF095CDD1CC388120035C619 /* AgentInfoTableViewCell.xib */; };
+		FF095CE81CC38A7C0035C619 /* BasicDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CE71CC38A7C0035C619 /* BasicDAO.m */; };
+		FF095CEB1CC38AE10035C619 /* AgentInfoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CEA1CC38AE10035C619 /* AgentInfoDAO.m */; };
+		FF095CEF1CC38E610035C619 /* AgentRegisterInfoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CEE1CC38E610035C619 /* AgentRegisterInfoDAO.m */; };
+		FF095CF31CC393E10035C619 /* AgentRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CF11CC393E10035C619 /* AgentRegisterViewController.m */; };
+		FF095CF41CC393E10035C619 /* AgentRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF095CF21CC393E10035C619 /* AgentRegisterViewController.xib */; };
+		FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095CF61CC3BDB00035C619 /* AgentRegisterTableViewCell.m */; };
+		FF095CF91CC3BDB00035C619 /* AgentRegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF095CF71CC3BDB00035C619 /* AgentRegisterTableViewCell.xib */; };
+		FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095D031CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m */; };
+		FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF095D041CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib */; };
+		FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */; };
 		FFD30AFA1CBFEB59006DE031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30AF91CBFEB59006DE031 /* main.m */; };
 		FFD30AFD1CBFEB59006DE031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30AFC1CBFEB59006DE031 /* AppDelegate.m */; };
 		FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD30B041CBFEB59006DE031 /* Assets.xcassets */; };
@@ -33,6 +47,29 @@
 		FF095CD01CC1F7FA0035C619 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserViewController.h; path = Controllers/Products/UserViewController.h; sourceTree = "<group>"; };
 		FF095CD11CC1F7FA0035C619 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserViewController.m; path = Controllers/Products/UserViewController.m; sourceTree = "<group>"; };
 		FF095CD31CC1F8B90035C619 /* WeiShang-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeiShang-Prefix.pch"; sourceTree = "<group>"; };
+		FF095CD41CC387730035C619 /* AgentsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentsListViewController.h; path = Controllers/AgentAuth/AgentsListViewController.h; sourceTree = "<group>"; };
+		FF095CD51CC387730035C619 /* AgentsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentsListViewController.m; path = Controllers/AgentAuth/AgentsListViewController.m; sourceTree = "<group>"; };
+		FF095CD61CC387730035C619 /* AgentsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentsListViewController.xib; path = Controllers/AgentAuth/AgentsListViewController.xib; sourceTree = "<group>"; };
+		FF095CDB1CC388120035C619 /* AgentInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentInfoTableViewCell.h; path = Views/AgentAuth/AgentInfoTableViewCell.h; sourceTree = "<group>"; };
+		FF095CDC1CC388120035C619 /* AgentInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentInfoTableViewCell.m; path = Views/AgentAuth/AgentInfoTableViewCell.m; sourceTree = "<group>"; };
+		FF095CDD1CC388120035C619 /* AgentInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentInfoTableViewCell.xib; path = Views/AgentAuth/AgentInfoTableViewCell.xib; sourceTree = "<group>"; };
+		FF095CE61CC38A7C0035C619 /* BasicDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicDAO.h; path = Models/DAO/Common/BasicDAO.h; sourceTree = "<group>"; };
+		FF095CE71CC38A7C0035C619 /* BasicDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicDAO.m; path = Models/DAO/Common/BasicDAO.m; sourceTree = "<group>"; };
+		FF095CE91CC38AE10035C619 /* AgentInfoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentInfoDAO.h; path = Models/DAO/AgentAuth/AgentInfoDAO.h; sourceTree = "<group>"; };
+		FF095CEA1CC38AE10035C619 /* AgentInfoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentInfoDAO.m; path = Models/DAO/AgentAuth/AgentInfoDAO.m; sourceTree = "<group>"; };
+		FF095CED1CC38E610035C619 /* AgentRegisterInfoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentRegisterInfoDAO.h; path = Models/DAO/AgentAuth/AgentRegisterInfoDAO.h; sourceTree = "<group>"; };
+		FF095CEE1CC38E610035C619 /* AgentRegisterInfoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentRegisterInfoDAO.m; path = Models/DAO/AgentAuth/AgentRegisterInfoDAO.m; sourceTree = "<group>"; };
+		FF095CF01CC393E10035C619 /* AgentRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentRegisterViewController.h; path = Controllers/AgentAuth/AgentRegisterViewController.h; sourceTree = "<group>"; };
+		FF095CF11CC393E10035C619 /* AgentRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentRegisterViewController.m; path = Controllers/AgentAuth/AgentRegisterViewController.m; sourceTree = "<group>"; };
+		FF095CF21CC393E10035C619 /* AgentRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentRegisterViewController.xib; path = Controllers/AgentAuth/AgentRegisterViewController.xib; sourceTree = "<group>"; };
+		FF095CF51CC3BDB00035C619 /* AgentRegisterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentRegisterTableViewCell.h; path = Views/AgentAuth/AgentRegisterTableViewCell.h; sourceTree = "<group>"; };
+		FF095CF61CC3BDB00035C619 /* AgentRegisterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentRegisterTableViewCell.m; path = Views/AgentAuth/AgentRegisterTableViewCell.m; sourceTree = "<group>"; };
+		FF095CF71CC3BDB00035C619 /* AgentRegisterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentRegisterTableViewCell.xib; path = Views/AgentAuth/AgentRegisterTableViewCell.xib; sourceTree = "<group>"; };
+		FF095D021CC3D6920035C619 /* AgentRegisterFooterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentRegisterFooterTableViewCell.h; path = Views/AgentAuth/AgentRegisterFooterTableViewCell.h; sourceTree = "<group>"; };
+		FF095D031CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentRegisterFooterTableViewCell.m; path = Views/AgentAuth/AgentRegisterFooterTableViewCell.m; sourceTree = "<group>"; };
+		FF095D041CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentRegisterFooterTableViewCell.xib; path = Views/AgentAuth/AgentRegisterFooterTableViewCell.xib; sourceTree = "<group>"; };
+		FF095D081CC3E0090035C619 /* DYAuthorizationStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYAuthorizationStatus.h; path = Controllers/Common/DYAuthorizationStatus.h; sourceTree = "<group>"; };
+		FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYAuthorizationStatus.m; path = Controllers/Common/DYAuthorizationStatus.m; sourceTree = "<group>"; };
 		FFD30AF51CBFEB59006DE031 /* WeiShang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiShang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD30AF91CBFEB59006DE031 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFD30AFB1CBFEB59006DE031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +128,64 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF095CD91CC387870035C619 /* AgentAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FF095CD41CC387730035C619 /* AgentsListViewController.h */,
+				FF095CD51CC387730035C619 /* AgentsListViewController.m */,
+				FF095CD61CC387730035C619 /* AgentsListViewController.xib */,
+				FF095CF01CC393E10035C619 /* AgentRegisterViewController.h */,
+				FF095CF11CC393E10035C619 /* AgentRegisterViewController.m */,
+				FF095CF21CC393E10035C619 /* AgentRegisterViewController.xib */,
+			);
+			name = AgentAuth;
+			sourceTree = "<group>";
+		};
+		FF095CDA1CC387BF0035C619 /* AgentAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FF095CDB1CC388120035C619 /* AgentInfoTableViewCell.h */,
+				FF095CDC1CC388120035C619 /* AgentInfoTableViewCell.m */,
+				FF095CDD1CC388120035C619 /* AgentInfoTableViewCell.xib */,
+				FF095CF51CC3BDB00035C619 /* AgentRegisterTableViewCell.h */,
+				FF095CF61CC3BDB00035C619 /* AgentRegisterTableViewCell.m */,
+				FF095CF71CC3BDB00035C619 /* AgentRegisterTableViewCell.xib */,
+				FF095D021CC3D6920035C619 /* AgentRegisterFooterTableViewCell.h */,
+				FF095D031CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m */,
+				FF095D041CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib */,
+			);
+			name = AgentAuth;
+			sourceTree = "<group>";
+		};
+		FF095CE01CC3899A0035C619 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				FF095CE51CC38A380035C619 /* Common */,
+				FF095CE11CC389A30035C619 /* AgentAuth */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		FF095CE11CC389A30035C619 /* AgentAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FF095CE91CC38AE10035C619 /* AgentInfoDAO.h */,
+				FF095CEA1CC38AE10035C619 /* AgentInfoDAO.m */,
+				FF095CED1CC38E610035C619 /* AgentRegisterInfoDAO.h */,
+				FF095CEE1CC38E610035C619 /* AgentRegisterInfoDAO.m */,
+			);
+			name = AgentAuth;
+			sourceTree = "<group>";
+		};
+		FF095CE51CC38A380035C619 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FF095CE61CC38A7C0035C619 /* BasicDAO.h */,
+				FF095CE71CC38A7C0035C619 /* BasicDAO.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		FFD30AEC1CBFEB59006DE031 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +233,7 @@
 		FFD30B0F1CBFECED006DE031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF095CDA1CC387BF0035C619 /* AgentAuth */,
 				FFD30B1D1CBFED78006DE031 /* Common */,
 			);
 			name = Views;
@@ -146,6 +242,7 @@
 		FFD30B101CBFECFC006DE031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FF095CD91CC387870035C619 /* AgentAuth */,
 				FFFB4B601CBFF9A700F09EAA /* Products */,
 				FFD30B121CBFED33006DE031 /* Common */,
 				FFFB4B551CBFF14B00F09EAA /* MainPage */,
@@ -156,9 +253,9 @@
 		FFD30B111CBFED0D006DE031 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF095CE01CC3899A0035C619 /* DAO */,
 				FFFB4B541CBFF10600F09EAA /* DataSource */,
 				FFFB4B531CBFF0F500F09EAA /* NetWork */,
-				FFFB4B521CBFF0EE00F09EAA /* DAO */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -166,6 +263,8 @@
 		FFD30B121CBFED33006DE031 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FF095D081CC3E0090035C619 /* DYAuthorizationStatus.h */,
+				FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */,
 				FFD30B171CBFED5B006DE031 /* PCTabBarViewController.h */,
 				FFD30B141CBFED5B006DE031 /* PCTabBarViewController.m */,
 				FFD30B151CBFED5B006DE031 /* PCNavigationViewController.h */,
@@ -187,13 +286,6 @@
 				FFD30B1F1CBFED98006DE031 /* UIImage+Creation.h */,
 			);
 			name = Common;
-			sourceTree = "<group>";
-		};
-		FFFB4B521CBFF0EE00F09EAA /* DAO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DAO;
 			sourceTree = "<group>";
 		};
 		FFFB4B531CBFF0F500F09EAA /* NetWork */ = {
@@ -302,9 +394,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD30B081CBFEB59006DE031 /* LaunchScreen.storyboard in Resources */,
+				FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */,
 				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
+				FF095CF41CC393E10035C619 /* AgentRegisterViewController.xib in Resources */,
+				FF095CD81CC387730035C619 /* AgentsListViewController.xib in Resources */,
 				FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */,
 				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
+				FF095CF91CC3BDB00035C619 /* AgentRegisterTableViewCell.xib in Resources */,
+				FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,16 +462,25 @@
 			files = (
 				FFD30B201CBFED98006DE031 /* UIImage+Creation.m in Sources */,
 				FFD30AFD1CBFEB59006DE031 /* AppDelegate.m in Sources */,
+				FF095CE81CC38A7C0035C619 /* BasicDAO.m in Sources */,
 				FFD30B1B1CBFED5B006DE031 /* PCNavigationViewController.m in Sources */,
 				FFFB4B711CBFFBBF00F09EAA /* ProductsListViewController.m in Sources */,
 				FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */,
 				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
 				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
+				FF095CEB1CC38AE10035C619 /* AgentInfoDAO.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
 				FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */,
 				FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */,
+				FF095CEF1CC38E610035C619 /* AgentRegisterInfoDAO.m in Sources */,
+				FF095CF31CC393E10035C619 /* AgentRegisterViewController.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
+				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
+				FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */,
+				FF095CD71CC387730035C619 /* AgentsListViewController.m in Sources */,
+				FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */,
+				FF095CDE1CC388120035C619 /* AgentInfoTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AgentRegisterFooterTableViewCell" rowHeight="140" id="KGk-i7-Jjw" customClass="AgentRegisterFooterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传身份证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqP-il-E9j">
+                        <rect key="frame" x="8" y="8" width="93" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OM5-ka-rKo"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="hBV-r7-Oi6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-5q-SA1">
+                        <rect key="frame" x="109" y="8" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="EIE-sB-tcM"/>
+                            <constraint firstAttribute="height" constant="80" id="bZI-31-Z0D"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="photo"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV5-0r-rz5">
+                        <rect key="frame" x="8" y="96" width="304" height="35"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="NAg-uQ-aP4"/>
+                        </constraints>
+                        <state key="normal" title="提交">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RNB-5q-SA1" firstAttribute="leading" secondItem="DqP-il-E9j" secondAttribute="trailing" constant="8" id="38v-N6-Dmz"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="DqP-il-E9j" secondAttribute="leading" id="67k-wR-4yA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kV5-0r-rz5" secondAttribute="trailing" id="ElX-u3-Brd"/>
+                    <constraint firstAttribute="topMargin" secondItem="DqP-il-E9j" secondAttribute="top" id="GUL-0L-i5e"/>
+                    <constraint firstItem="RNB-5q-SA1" firstAttribute="top" secondItem="DqP-il-E9j" secondAttribute="top" id="M6H-qk-0xs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kV5-0r-rz5" secondAttribute="bottom" id="i8b-U2-Mw5"/>
+                    <constraint firstItem="kV5-0r-rz5" firstAttribute="leading" secondItem="DqP-il-E9j" secondAttribute="leading" id="nAC-cV-pK8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commitButton" destination="kV5-0r-rz5" id="8ik-Fd-0ty"/>
+                <outlet property="descriptionLabel" destination="DqP-il-E9j" id="t9b-q2-Qvq"/>
+                <outlet property="imageButton" destination="RNB-5q-SA1" id="e68-5h-T75"/>
+            </connections>
+            <point key="canvasLocation" x="377" y="306"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo" width="80" height="80"/>
+    </resources>
+</document>

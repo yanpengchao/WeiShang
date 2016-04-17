@@ -11,6 +11,7 @@
 #import "PCNavigationViewController.h"
 #import "MainPageViewController.h"
 #import "ProductsListViewController.h"
+#import "AgentsListViewController.h"
 #import "ViewController.h"
 
 @interface PCTabBarViewController ()
@@ -64,7 +65,7 @@
     [self navigationVCComPare:nav1 SetTitle:titleArray[1] image:imageArray[1] selImage:seletedImageArray[1]];
     
     // 代理
-    UIViewController *vc2 = [[UIViewController alloc] init];
+    AgentsListViewController *vc2 = [[AgentsListViewController alloc] init];
     PCNavigationViewController *nav2 = [[PCNavigationViewController alloc]initWithRootViewController:vc2];
     [self navigationVCComPare:nav2 SetTitle:titleArray[2] image:imageArray[2] selImage:seletedImageArray[2]];
     
