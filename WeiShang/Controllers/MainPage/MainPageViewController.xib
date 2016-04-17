@@ -45,7 +45,8 @@
                         </webView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="XG6-dM-3t6" firstAttribute="leading" secondItem="GuG-AG-6v9" secondAttribute="leading" id="0ot-oS-Did"/>
+                        <constraint firstItem="Q4r-Q6-pl1" firstAttribute="top" secondItem="1SL-I6-7gt" secondAttribute="top" id="0aG-De-4L8"/>
+                        <constraint firstItem="XG6-dM-3t6" firstAttribute="top" secondItem="1SL-I6-7gt" secondAttribute="top" id="K9a-sx-WOD"/>
                         <constraint firstItem="GuG-AG-6v9" firstAttribute="leading" secondItem="1SL-I6-7gt" secondAttribute="leading" id="KSf-FV-nJ2"/>
                         <constraint firstItem="GuG-AG-6v9" firstAttribute="width" secondItem="1SL-I6-7gt" secondAttribute="width" id="Lpv-Fu-Fqv"/>
                         <constraint firstItem="XG6-dM-3t6" firstAttribute="top" secondItem="GuG-AG-6v9" secondAttribute="top" id="NRh-sB-xZS"/>
@@ -63,7 +64,8 @@
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="0ot-oS-Did"/>
+                            <exclude reference="NRh-sB-xZS"/>
+                            <exclude reference="yBT-9a-kiX"/>
                         </mask>
                     </variation>
                     <connections>
@@ -78,7 +80,7 @@
                 <constraint firstAttribute="trailing" secondItem="1SL-I6-7gt" secondAttribute="trailing" id="Pil-qQ-Ddg"/>
                 <constraint firstAttribute="bottom" secondItem="1SL-I6-7gt" secondAttribute="bottom" id="XhO-j9-3je"/>
             </constraints>
-            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

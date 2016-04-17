@@ -43,17 +43,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    [self segmentedValueChanged];
+    CGSize scrollViewSize = self.scrollView.frame.size;
+    CGSize contentSize = self.scrollView.contentSize;
+    CGPoint contentOffset = self.scrollView.contentOffset;
+    
+    [self.scrollView setContentSize:CGSizeMake(contentSize.width, scrollViewSize.height)];
+    [self.scrollView setContentOffset:CGPointMake(contentOffset.x, 0)];
 }
 
 #pragma mark - 导航条顶部资讯分类
@@ -88,22 +87,23 @@
 {
     CGRect scrollViewBounds = self.scrollView.bounds;
     CGFloat width = scrollViewBounds.size.width;
+    CGPoint contentOffset = self.scrollView.contentOffset;
     NSInteger selectedIndex = self.segmentedControl.selectedSegmentIndex;
     
     switch (selectedIndex) {
         case 0:
         {
-            [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+            [self.scrollView setContentOffset:CGPointMake(0, contentOffset.y) animated:YES];
         }
             break;
         case 1:
         {
-            [self.scrollView setContentOffset:CGPointMake(width, 0) animated:YES];
+            [self.scrollView setContentOffset:CGPointMake(width, contentOffset.y) animated:YES];
         }
             break;
         case 2:
         {
-            [self.scrollView setContentOffset:CGPointMake(width*2, 0) animated:YES];
+            [self.scrollView setContentOffset:CGPointMake(width*2, contentOffset.y) animated:YES];
         }
             break;
         default:
@@ -136,6 +136,11 @@
     if (scrollView == self.scrollView) {
         CGPoint offsetPoint = scrollView.contentOffset;
         CGSize scrollViewSize = scrollView.frame.size;
+        
+        if (offsetPoint.y < 0) {
+            [self.scrollView setContentOffset:CGPointMake(offsetPoint.x, 0) animated:YES];
+        }
+        
         if (offsetPoint.x < scrollViewSize.width) {
             [self.segmentedControl setSelectedSegmentIndex:0];
         }
