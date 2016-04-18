@@ -52,7 +52,9 @@ static NSString *CellTableIdentifier = @"AgentInfoTableViewCell";
                                                                                  action:@selector(showSearchBar)];
     self.navigationItem.rightBarButtonItem = searchButon;
     
-    UIBarButtonItem* addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addAgent)];
+    UIBarButtonItem* addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                               target:self
+                                                                               action:@selector(addAgent)];
     self.navigationItem.leftBarButtonItem = addButton;
 }
 

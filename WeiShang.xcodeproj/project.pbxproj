@@ -23,6 +23,14 @@
 		FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095D031CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m */; };
 		FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF095D041CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib */; };
 		FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */; };
+		FFBA5BF11CC5307600B22580 /* OrdersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBA5BEF1CC5307600B22580 /* OrdersListViewController.m */; };
+		FFBA5BF21CC5307600B22580 /* OrdersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBA5BF01CC5307600B22580 /* OrdersListViewController.xib */; };
+		FFBA5BF71CC537AD00B22580 /* MyOrdersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBA5BF51CC537AD00B22580 /* MyOrdersTableViewCell.m */; };
+		FFBA5BF81CC537AD00B22580 /* MyOrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBA5BF61CC537AD00B22580 /* MyOrdersTableViewCell.xib */; };
+		FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBA5BFA1CC537D200B22580 /* SubOrdersTableViewCell.m */; };
+		FFBA5BFD1CC537D200B22580 /* SubOrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBA5BFB1CC537D200B22580 /* SubOrdersTableViewCell.xib */; };
+		FFBA5C011CC5382600B22580 /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBA5BFF1CC5382600B22580 /* OrderTableViewCell.m */; };
+		FFBA5C021CC5382600B22580 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBA5C001CC5382600B22580 /* OrderTableViewCell.xib */; };
 		FFD30AFA1CBFEB59006DE031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30AF91CBFEB59006DE031 /* main.m */; };
 		FFD30AFD1CBFEB59006DE031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30AFC1CBFEB59006DE031 /* AppDelegate.m */; };
 		FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD30B041CBFEB59006DE031 /* Assets.xcassets */; };
@@ -70,6 +78,18 @@
 		FF095D041CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentRegisterFooterTableViewCell.xib; path = Views/AgentAuth/AgentRegisterFooterTableViewCell.xib; sourceTree = "<group>"; };
 		FF095D081CC3E0090035C619 /* DYAuthorizationStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYAuthorizationStatus.h; path = Controllers/Common/DYAuthorizationStatus.h; sourceTree = "<group>"; };
 		FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYAuthorizationStatus.m; path = Controllers/Common/DYAuthorizationStatus.m; sourceTree = "<group>"; };
+		FFBA5BEE1CC5307600B22580 /* OrdersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrdersListViewController.h; path = Controllers/Orders/OrdersListViewController.h; sourceTree = "<group>"; };
+		FFBA5BEF1CC5307600B22580 /* OrdersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrdersListViewController.m; path = Controllers/Orders/OrdersListViewController.m; sourceTree = "<group>"; };
+		FFBA5BF01CC5307600B22580 /* OrdersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrdersListViewController.xib; path = Controllers/Orders/OrdersListViewController.xib; sourceTree = "<group>"; };
+		FFBA5BF41CC537AD00B22580 /* MyOrdersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyOrdersTableViewCell.h; path = Views/Orders/MyOrdersTableViewCell.h; sourceTree = "<group>"; };
+		FFBA5BF51CC537AD00B22580 /* MyOrdersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyOrdersTableViewCell.m; path = Views/Orders/MyOrdersTableViewCell.m; sourceTree = "<group>"; };
+		FFBA5BF61CC537AD00B22580 /* MyOrdersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyOrdersTableViewCell.xib; path = Views/Orders/MyOrdersTableViewCell.xib; sourceTree = "<group>"; };
+		FFBA5BF91CC537D200B22580 /* SubOrdersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubOrdersTableViewCell.h; path = Views/Orders/SubOrdersTableViewCell.h; sourceTree = "<group>"; };
+		FFBA5BFA1CC537D200B22580 /* SubOrdersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubOrdersTableViewCell.m; path = Views/Orders/SubOrdersTableViewCell.m; sourceTree = "<group>"; };
+		FFBA5BFB1CC537D200B22580 /* SubOrdersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubOrdersTableViewCell.xib; path = Views/Orders/SubOrdersTableViewCell.xib; sourceTree = "<group>"; };
+		FFBA5BFE1CC5382600B22580 /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderTableViewCell.h; path = Views/Orders/OrderTableViewCell.h; sourceTree = "<group>"; };
+		FFBA5BFF1CC5382600B22580 /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderTableViewCell.m; path = Views/Orders/OrderTableViewCell.m; sourceTree = "<group>"; };
+		FFBA5C001CC5382600B22580 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderTableViewCell.xib; path = Views/Orders/OrderTableViewCell.xib; sourceTree = "<group>"; };
 		FFD30AF51CBFEB59006DE031 /* WeiShang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiShang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD30AF91CBFEB59006DE031 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFD30AFB1CBFEB59006DE031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -186,6 +206,32 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		FFBA5BE81CC52FA100B22580 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA5BEE1CC5307600B22580 /* OrdersListViewController.h */,
+				FFBA5BEF1CC5307600B22580 /* OrdersListViewController.m */,
+				FFBA5BF01CC5307600B22580 /* OrdersListViewController.xib */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
+		FFBA5BF31CC5376400B22580 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA5BF41CC537AD00B22580 /* MyOrdersTableViewCell.h */,
+				FFBA5BF51CC537AD00B22580 /* MyOrdersTableViewCell.m */,
+				FFBA5BF61CC537AD00B22580 /* MyOrdersTableViewCell.xib */,
+				FFBA5BF91CC537D200B22580 /* SubOrdersTableViewCell.h */,
+				FFBA5BFA1CC537D200B22580 /* SubOrdersTableViewCell.m */,
+				FFBA5BFB1CC537D200B22580 /* SubOrdersTableViewCell.xib */,
+				FFBA5BFE1CC5382600B22580 /* OrderTableViewCell.h */,
+				FFBA5BFF1CC5382600B22580 /* OrderTableViewCell.m */,
+				FFBA5C001CC5382600B22580 /* OrderTableViewCell.xib */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
 		FFD30AEC1CBFEB59006DE031 = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +279,7 @@
 		FFD30B0F1CBFECED006DE031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FFBA5BF31CC5376400B22580 /* Orders */,
 				FF095CDA1CC387BF0035C619 /* AgentAuth */,
 				FFD30B1D1CBFED78006DE031 /* Common */,
 			);
@@ -242,6 +289,7 @@
 		FFD30B101CBFECFC006DE031 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FFBA5BE81CC52FA100B22580 /* Orders */,
 				FF095CD91CC387870035C619 /* AgentAuth */,
 				FFFB4B601CBFF9A700F09EAA /* Products */,
 				FFD30B121CBFED33006DE031 /* Common */,
@@ -394,14 +442,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD30B081CBFEB59006DE031 /* LaunchScreen.storyboard in Resources */,
+				FFBA5BF21CC5307600B22580 /* OrdersListViewController.xib in Resources */,
 				FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */,
 				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
 				FF095CF41CC393E10035C619 /* AgentRegisterViewController.xib in Resources */,
 				FF095CD81CC387730035C619 /* AgentsListViewController.xib in Resources */,
+				FFBA5BF81CC537AD00B22580 /* MyOrdersTableViewCell.xib in Resources */,
 				FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */,
 				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
 				FF095CF91CC3BDB00035C619 /* AgentRegisterTableViewCell.xib in Resources */,
 				FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */,
+				FFBA5BFD1CC537D200B22580 /* SubOrdersTableViewCell.xib in Resources */,
+				FFBA5C021CC5382600B22580 /* OrderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,9 +516,11 @@
 				FFD30AFD1CBFEB59006DE031 /* AppDelegate.m in Sources */,
 				FF095CE81CC38A7C0035C619 /* BasicDAO.m in Sources */,
 				FFD30B1B1CBFED5B006DE031 /* PCNavigationViewController.m in Sources */,
+				FFBA5BF71CC537AD00B22580 /* MyOrdersTableViewCell.m in Sources */,
 				FFFB4B711CBFFBBF00F09EAA /* ProductsListViewController.m in Sources */,
 				FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */,
 				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
+				FFBA5C011CC5382600B22580 /* OrderTableViewCell.m in Sources */,
 				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
 				FF095CEB1CC38AE10035C619 /* AgentInfoDAO.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
@@ -474,6 +528,7 @@
 				FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */,
 				FF095CEF1CC38E610035C619 /* AgentRegisterInfoDAO.m in Sources */,
 				FF095CF31CC393E10035C619 /* AgentRegisterViewController.m in Sources */,
+				FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
 				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
@@ -481,6 +536,7 @@
 				FF095CD71CC387730035C619 /* AgentsListViewController.m in Sources */,
 				FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */,
 				FF095CDE1CC388120035C619 /* AgentInfoTableViewCell.m in Sources */,
+				FFBA5BF11CC5307600B22580 /* OrdersListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 #import "MainPageViewController.h"
 #import "ProductsListViewController.h"
 #import "AgentsListViewController.h"
+#import "OrdersListViewController.h"
 #import "ViewController.h"
 
 @interface PCTabBarViewController ()
@@ -70,7 +71,7 @@
     [self navigationVCComPare:nav2 SetTitle:titleArray[2] image:imageArray[2] selImage:seletedImageArray[2]];
     
     // 订单
-    UIViewController *vc3 = [[UIViewController alloc] init];
+    OrdersListViewController *vc3 = [[OrdersListViewController alloc] init];
     PCNavigationViewController *nav3 = [[PCNavigationViewController alloc]initWithRootViewController:vc3];
     [self navigationVCComPare:nav3 SetTitle:titleArray[3] image:imageArray[3] selImage:seletedImageArray[3]];
     

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrdersListViewController">
+            <connections>
+                <outlet property="myOrdersTableView" destination="Wjx-Yu-lOk" id="c9D-eg-AL0"/>
+                <outlet property="scrollView" destination="2gd-3K-Ifi" id="je9-ni-P3l"/>
+                <outlet property="subOrdersTableView" destination="TEf-R4-IPw" id="p6o-Xv-Nv4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gd-3K-Ifi">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wjx-Yu-lOk" userLabel="table1">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="JBF-5D-AdN"/>
+                                <outlet property="delegate" destination="-1" id="7dG-ek-4dJ"/>
+                            </connections>
+                        </tableView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TEf-R4-IPw" userLabel="table2">
+                            <rect key="frame" x="375" y="0.0" width="375" height="603"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="7du-mR-Ifd"/>
+                                <outlet property="delegate" destination="-1" id="wNo-ny-fjS"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Wjx-Yu-lOk" firstAttribute="leading" secondItem="2gd-3K-Ifi" secondAttribute="leading" id="0nO-r8-yQA"/>
+                        <constraint firstItem="TEf-R4-IPw" firstAttribute="top" secondItem="2gd-3K-Ifi" secondAttribute="top" id="3Xd-Cp-jgV"/>
+                        <constraint firstItem="Wjx-Yu-lOk" firstAttribute="height" secondItem="2gd-3K-Ifi" secondAttribute="height" id="Btb-IB-smq"/>
+                        <constraint firstItem="TEf-R4-IPw" firstAttribute="leading" secondItem="Wjx-Yu-lOk" secondAttribute="trailing" id="E7p-Ot-RfR"/>
+                        <constraint firstItem="TEf-R4-IPw" firstAttribute="width" secondItem="2gd-3K-Ifi" secondAttribute="width" id="Njw-RD-mLu"/>
+                        <constraint firstItem="Wjx-Yu-lOk" firstAttribute="width" secondItem="2gd-3K-Ifi" secondAttribute="width" id="Rh4-0f-BOC"/>
+                        <constraint firstAttribute="bottom" secondItem="Wjx-Yu-lOk" secondAttribute="bottom" id="avu-5b-B8e"/>
+                        <constraint firstItem="Wjx-Yu-lOk" firstAttribute="top" secondItem="2gd-3K-Ifi" secondAttribute="top" id="bN4-gt-FEE"/>
+                        <constraint firstItem="TEf-R4-IPw" firstAttribute="height" secondItem="2gd-3K-Ifi" secondAttribute="height" id="eUX-61-tn0"/>
+                        <constraint firstAttribute="trailing" secondItem="TEf-R4-IPw" secondAttribute="trailing" id="mq5-hw-3WP"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="irl-gg-XLq"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2gd-3K-Ifi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E2q-6G-TMx"/>
+                <constraint firstItem="2gd-3K-Ifi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Ifa-Ny-MSe"/>
+                <constraint firstAttribute="trailing" secondItem="2gd-3K-Ifi" secondAttribute="trailing" id="Q1Z-1Q-lwW"/>
+                <constraint firstAttribute="bottom" secondItem="2gd-3K-Ifi" secondAttribute="bottom" id="cKI-0Y-6p3"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
