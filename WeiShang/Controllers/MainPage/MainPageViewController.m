@@ -115,15 +115,15 @@
 
 - (void)loadWebViews
 {
-    NSURL* webUrl = [NSURL URLWithString:@"http://news.qq.com"];
+    NSURL* webUrl = [NSURL URLWithString:@"http://app.nplus7.com/AppPages/News.html"];
     NSURLRequest* request =[NSURLRequest requestWithURL:webUrl cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:3600];
     [self.webView1 loadRequest:request];
     
-    webUrl = [NSURL URLWithString:@"http://www.baidu.com"];
+    webUrl = [NSURL URLWithString:@"http://app.nplus7.com/AppPages/Video.html"];
     request =[NSURLRequest requestWithURL:webUrl cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:3600];
     [self.webView2 loadRequest:request];
     
-    webUrl = [NSURL URLWithString:@"http://www.jd.com"];
+    webUrl = [NSURL URLWithString:@"http://app.nplus7.com/AppPages/Notice.html"];
     request =[NSURLRequest requestWithURL:webUrl cachePolicy:NSURLRequestReloadRevalidatingCacheData timeoutInterval:3600];
     [self.webView3 loadRequest:request];
 }

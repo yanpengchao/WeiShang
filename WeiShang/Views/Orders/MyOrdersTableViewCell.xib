@@ -100,6 +100,15 @@
                     <constraint firstAttribute="trailingMargin" secondItem="Bbe-GJ-vul" secondAttribute="trailing" id="vSi-lC-t5g"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsCarriageLabel" destination="8d6-5G-qdC" id="m3m-Pb-GYR"/>
+                <outlet property="goodsCountLabel" destination="yLT-Gl-yHS" id="kCz-tt-r4B"/>
+                <outlet property="goodsImageView" destination="u8u-5k-DOu" id="4qh-ym-13O"/>
+                <outlet property="goodsNameLabel" destination="Lzt-j2-cdJ" id="ZvY-Dx-XF0"/>
+                <outlet property="goodsPriceLabel" destination="Bbe-GJ-vul" id="w0D-IT-YAW"/>
+                <outlet property="goodsStateDetailLabel" destination="KbH-Zf-rdD" id="slm-II-wcC"/>
+                <outlet property="goodsStateLabel" destination="VHy-sH-qSd" id="Y7V-0o-34j"/>
+            </connections>
             <point key="canvasLocation" x="359" y="326.5"/>
         </tableViewCell>
     </objects>

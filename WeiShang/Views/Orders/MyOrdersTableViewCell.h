@@ -10,4 +10,11 @@
 
 @interface MyOrdersTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *goodsImageView;
+@property (weak, nonatomic) IBOutlet UILabel *goodsNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *goodsPriceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *goodsStateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *goodsCarriageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *goodsCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *goodsStateDetailLabel;
 @end

@@ -9,6 +9,10 @@
 #import "OrdersListViewController.h"
 #import "MyOrdersTableViewCell.h"
 #import "SubOrdersTableViewCell.h"
+#import "MyOrderDAO.h"
+#import "SubOrderDAO.h"
+
+#import "UIImageView+WebCache.h"
 
 static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
 static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
@@ -188,6 +192,20 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
     return _customSearchBar;
 }
 
+#pragma mark - private functions
+
+- (void)updateMyCell:(MyOrdersTableViewCell*)cell withInfo:(MyOrderDAO*)info
+{
+    NSURL* url = [NSURL URLWithString:@"http://www.iconpng.com/download/png/1135"];
+    UIImage* placeholderImage = [UIImage imageNamed:@"downloading"];
+    [cell.goodsImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
+}
+
+- (void)updateSubCell:(SubOrdersTableViewCell*)cell withInfo:(SubOrderDAO*)info
+{
+    //
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -206,10 +224,12 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
     
     if (tableView == self.myOrdersTableView) {
         MyOrdersTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyOrderCellTableIdentifier];
+        [self updateMyCell:cell withInfo:nil];
         return cell;
     }
     else {
         SubOrdersTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SubOrderCellTableIdentifier];
+        [self updateSubCell:cell withInfo:nil];
         return cell;
     }
 }
