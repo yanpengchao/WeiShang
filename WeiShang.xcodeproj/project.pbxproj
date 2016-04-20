@@ -23,6 +23,8 @@
 		FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095D031CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m */; };
 		FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF095D041CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib */; };
 		FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */; };
+		FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */; };
+		FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */; };
 		FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */; };
 		FFB689121CC68E3C008EF0D2 /* SubOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB689111CC68E3C008EF0D2 /* SubOrderDAO.m */; };
 		FFBA5BF11CC5307600B22580 /* OrdersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBA5BEF1CC5307600B22580 /* OrdersListViewController.m */; };
@@ -80,6 +82,10 @@
 		FF095D041CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgentRegisterFooterTableViewCell.xib; path = Views/AgentAuth/AgentRegisterFooterTableViewCell.xib; sourceTree = "<group>"; };
 		FF095D081CC3E0090035C619 /* DYAuthorizationStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYAuthorizationStatus.h; path = Controllers/Common/DYAuthorizationStatus.h; sourceTree = "<group>"; };
 		FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYAuthorizationStatus.m; path = Controllers/Common/DYAuthorizationStatus.m; sourceTree = "<group>"; };
+		FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsDAO.h; path = Models/DAO/Orders/GoodsDAO.h; sourceTree = "<group>"; };
+		FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsDAO.m; path = Models/DAO/Orders/GoodsDAO.m; sourceTree = "<group>"; };
+		FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseOrderDAO.h; path = Models/DAO/Orders/BaseOrderDAO.h; sourceTree = "<group>"; };
+		FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseOrderDAO.m; path = Models/DAO/Orders/BaseOrderDAO.m; sourceTree = "<group>"; };
 		FFB6890D1CC68DDC008EF0D2 /* MyOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyOrderDAO.h; path = Models/DAO/Orders/MyOrderDAO.h; sourceTree = "<group>"; };
 		FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyOrderDAO.m; path = Models/DAO/Orders/MyOrderDAO.m; sourceTree = "<group>"; };
 		FFB689101CC68E3C008EF0D2 /* SubOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubOrderDAO.h; path = Models/DAO/Orders/SubOrderDAO.h; sourceTree = "<group>"; };
@@ -220,6 +226,10 @@
 				FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */,
 				FFB689101CC68E3C008EF0D2 /* SubOrderDAO.h */,
 				FFB689111CC68E3C008EF0D2 /* SubOrderDAO.m */,
+				FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */,
+				FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */,
+				FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */,
+				FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */,
 			);
 			name = Orders;
 			sourceTree = "<group>";
@@ -297,8 +307,8 @@
 		FFD30B0F1CBFECED006DE031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFBA5BF31CC5376400B22580 /* Orders */,
 				FF095CDA1CC387BF0035C619 /* AgentAuth */,
+				FFBA5BF31CC5376400B22580 /* Orders */,
 				FFD30B1D1CBFED78006DE031 /* Common */,
 			);
 			name = Views;
@@ -552,8 +562,10 @@
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
 				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
+				FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */,
 				FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */,
 				FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */,
+				FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */,
 				FF095CD71CC387730035C619 /* AgentsListViewController.m in Sources */,
 				FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */,
 				FF095CDE1CC388120035C619 /* AgentInfoTableViewCell.m in Sources */,

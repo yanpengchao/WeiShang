@@ -203,7 +203,9 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
 
 - (void)updateSubCell:(SubOrdersTableViewCell*)cell withInfo:(SubOrderDAO*)info
 {
-    //
+    NSURL* url = [NSURL URLWithString:@"http://www.iconpng.com/download/png/10307"];
+    UIImage* placeholderImage = [UIImage imageNamed:@"downloading"];
+    [cell.goodsImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
 }
 
 #pragma mark - Table view data source
@@ -240,7 +242,7 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
         return 85;
     }
     else {
-        return 44;
+        return 124;
     }
 }
 

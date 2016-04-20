@@ -6,8 +6,8 @@
 //  Copyright © 2016年 鄢彭超. All rights reserved.
 //
 
-#import "BasicDAO.h"
+#import "BaseOrderDAO.h"
 
-@interface SubOrderDAO : BasicDAO
+@interface SubOrderDAO : BaseOrderDAO
 
 @end
