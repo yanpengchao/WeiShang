@@ -10,6 +10,7 @@
 #import "UIImage+Creation.h"
 #import "PCNavigationViewController.h"
 #import "MainPageViewController.h"
+#import "MainViewController.h"
 #import "ProductsListViewController.h"
 #import "AgentsListViewController.h"
 #import "OrdersListViewController.h"
@@ -56,7 +57,8 @@
     NSArray *seletedImageArray = @[@"tabIcon1", @"tabIcon2", @"tabIcon3", @"tabIcon4", @"tabIcon5"];
     
     // 我的
-    MainPageViewController *vc0 = [[MainPageViewController alloc] init];
+//    MainPageViewController *vc0 = [[MainPageViewController alloc] init];
+    MainViewController* vc0 = [[MainViewController alloc] init];
     PCNavigationViewController *nav0 = [[PCNavigationViewController alloc]initWithRootViewController:vc0];
     [self navigationVCComPare:nav0 SetTitle:titleArray[0] image:imageArray[0] selImage:seletedImageArray[0]];
     

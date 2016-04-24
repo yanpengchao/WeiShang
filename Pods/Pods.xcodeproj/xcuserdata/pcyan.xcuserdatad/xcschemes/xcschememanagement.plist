@@ -54,6 +54,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NinaPagerView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ODRefreshControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -112,11 +117,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43542602A86D7DD4D04E9ACEBD8793E9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>56708788CEEFF980D691A40031C4F150</key>
 		<dict>
 			<key>primary</key>
@@ -153,6 +153,16 @@
 			<true/>
 		</dict>
 		<key>B236E4C000C9C935712FDFB561218349</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB684B83ED80B0C25E0E3C918AC2EF31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E383FE11EB6A4EA6E62787CC0B267BC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

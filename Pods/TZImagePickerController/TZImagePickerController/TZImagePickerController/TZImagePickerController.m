@@ -69,6 +69,7 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [UIApplication sharedApplication].statusBarStyle = _originStatusBarStyle;
+    [self hideProgressHUD];
 }
 
 - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount delegate:(id<TZImagePickerControllerDelegate>)delegate {
@@ -81,6 +82,9 @@
         // 默认准许用户选择原图和视频, 你也可以在这个方法后置为NO
         _allowPickingOriginalPhoto = YES;
         _allowPickingVideo = YES;
+        _allowPickingImage = YES;
+        _timeout = 15;
+        _photoWidth = 828.0;
         
         if (![[TZImageManager manager] authorizationStatusAuthorized]) {
             _tipLable = [[UILabel alloc] init];
@@ -115,7 +119,7 @@
     _pushToPhotoPickerVc = YES;
     if (_pushToPhotoPickerVc) {
         TZPhotoPickerController *photoPickerVc = [[TZPhotoPickerController alloc] init];
-        [[TZImageManager manager] getCameraRollAlbum:self.allowPickingVideo completion:^(TZAlbumModel *model) {
+        [[TZImageManager manager] getCameraRollAlbum:self.allowPickingVideo allowPickingImage:self.allowPickingImage completion:^(TZAlbumModel *model) {
             photoPickerVc.model = model;
             [self pushViewController:photoPickerVc animated:YES];
             _pushToPhotoPickerVc = NO;
@@ -161,6 +165,11 @@
     }
     [_HUDIndicatorView startAnimating];
     [[UIApplication sharedApplication].keyWindow addSubview:_progressHUD];
+    
+    // if over time, dismiss HUD automatic
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.timeout * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self hideProgressHUD];
+    });
 }
 
 - (void)hideProgressHUD {
@@ -170,13 +179,22 @@
     }
 }
 
+- (void)setTimeout:(NSInteger)timeout {
+    _timeout = timeout;
+    if (timeout < 5) {
+        _timeout = 5;
+    } else if (_timeout > 60) {
+        _timeout = 60;
+    }
+}
+
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (iOS7Later) viewController.automaticallyAdjustsScrollViewInsets = NO;
     if (_timer) { [_timer invalidate]; _timer = nil;}
     
     if (self.childViewControllers.count > 0) {
         UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(3, 0, 50, 44)];
-        [backButton setImage:[UIImage imageNamed:@"navi_back"] forState:UIControlStateNormal];
+        [backButton setImage:[UIImage imageNamedFromMyBundle:@"navi_back.png"] forState:UIControlStateNormal];
         backButton.imageEdgeInsets = UIEdgeInsetsMake(0, -5, 0, 0);
         [backButton setTitle:@"返回" forState:UIControlStateNormal];
         backButton.titleLabel.font = [UIFont systemFontOfSize:15];
@@ -216,7 +234,7 @@
 
 - (void)configTableView {
     TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
-    [[TZImageManager manager] getAllAlbums:imagePickerVc.allowPickingVideo completion:^(NSArray<TZAlbumModel *> *models) {
+    [[TZImageManager manager] getAllAlbums:imagePickerVc.allowPickingVideo allowPickingImage:imagePickerVc.allowPickingImage completion:^(NSArray<TZAlbumModel *> *models) {
         _albumArr = [NSMutableArray arrayWithArray:models];
         
         CGFloat top = 44;
@@ -226,7 +244,7 @@
         _tableView.tableFooterView = [[UIView alloc] init];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        [_tableView registerNib:[UINib nibWithNibName:@"TZAlbumCell" bundle:nil] forCellReuseIdentifier:@"TZAlbumCell"];
+        [_tableView registerClass:[TZAlbumCell class] forCellReuseIdentifier:@"TZAlbumCell"];
         [self.view addSubview:_tableView];
     }];
 }
@@ -261,6 +279,21 @@
     photoPickerVc.model = _albumArr[indexPath.row];
     [self.navigationController pushViewController:photoPickerVc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+@end
+
+
+@implementation UIImage (MyBundle)
+
++ (UIImage *)imageNamedFromMyBundle:(NSString *)name {
+    UIImage *image = [UIImage imageNamed:[@"TZImagePickerController.bundle" stringByAppendingPathComponent:name]];
+    if (image) {
+        return image;
+    } else {
+        image = [UIImage imageNamed:[@"Frameworks/TZImagePickerController.framework/TZImagePickerController.bundle" stringByAppendingPathComponent:name]];
+        return image;
+    }
 }
 
 @end

@@ -38,11 +38,14 @@
 		FFD30AFA1CBFEB59006DE031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30AF91CBFEB59006DE031 /* main.m */; };
 		FFD30AFD1CBFEB59006DE031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30AFC1CBFEB59006DE031 /* AppDelegate.m */; };
 		FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD30B041CBFEB59006DE031 /* Assets.xcassets */; };
-		FFD30B081CBFEB59006DE031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD30B061CBFEB59006DE031 /* LaunchScreen.storyboard */; };
 		FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30B141CBFED5B006DE031 /* PCTabBarViewController.m */; };
 		FFD30B1B1CBFED5B006DE031 /* PCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30B161CBFED5B006DE031 /* PCNavigationViewController.m */; };
 		FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30B191CBFED5B006DE031 /* ViewController.m */; };
 		FFD30B201CBFED98006DE031 /* UIImage+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD30B1E1CBFED98006DE031 /* UIImage+Creation.m */; };
+		FFDD31231CCD0E7D00438DCC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDD31211CCD0E7D00438DCC /* MainViewController.m */; };
+		FFDD31241CCD0E7D00438DCC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFDD31221CCD0E7D00438DCC /* MainViewController.xib */; };
+		FFDD31441CCD23EF00438DCC /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDD31421CCD23EF00438DCC /* PageViewController.m */; };
+		FFDD31451CCD23EF00438DCC /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFDD31431CCD23EF00438DCC /* PageViewController.xib */; };
 		FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B571CBFF1BA00F09EAA /* MainPageViewController.m */; };
 		FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFB4B581CBFF1BA00F09EAA /* MainPageViewController.xib */; };
 		FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFB4B5C1CBFF51300F09EAA /* WebViewController.m */; };
@@ -107,7 +110,6 @@
 		FFD30AFB1CBFEB59006DE031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFD30AFC1CBFEB59006DE031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FFD30B041CBFEB59006DE031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFD30B071CBFEB59006DE031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFD30B091CBFEB59006DE031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFD30B141CBFED5B006DE031 /* PCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCTabBarViewController.m; path = Controllers/Common/PCTabBarViewController.m; sourceTree = "<group>"; };
 		FFD30B151CBFED5B006DE031 /* PCNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCNavigationViewController.h; path = Controllers/Common/PCNavigationViewController.h; sourceTree = "<group>"; };
@@ -117,6 +119,12 @@
 		FFD30B191CBFED5B006DE031 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/Common/ViewController.m; sourceTree = "<group>"; };
 		FFD30B1E1CBFED98006DE031 /* UIImage+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Creation.m"; path = "Views/Common/UIImage+Creation.m"; sourceTree = "<group>"; };
 		FFD30B1F1CBFED98006DE031 /* UIImage+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Creation.h"; path = "Views/Common/UIImage+Creation.h"; sourceTree = "<group>"; };
+		FFDD31201CCD0E7D00438DCC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Controllers/MainPage/MainViewController.h; sourceTree = "<group>"; };
+		FFDD31211CCD0E7D00438DCC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Controllers/MainPage/MainViewController.m; sourceTree = "<group>"; };
+		FFDD31221CCD0E7D00438DCC /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Controllers/MainPage/MainViewController.xib; sourceTree = "<group>"; };
+		FFDD31411CCD23EF00438DCC /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PageViewController.h; path = Controllers/MainPage/PageViewController.h; sourceTree = "<group>"; };
+		FFDD31421CCD23EF00438DCC /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PageViewController.m; path = Controllers/MainPage/PageViewController.m; sourceTree = "<group>"; };
+		FFDD31431CCD23EF00438DCC /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PageViewController.xib; path = Controllers/MainPage/PageViewController.xib; sourceTree = "<group>"; };
 		FFFB4B561CBFF1BA00F09EAA /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainPageViewController.h; path = Controllers/MainPage/MainPageViewController.h; sourceTree = "<group>"; };
 		FFFB4B571CBFF1BA00F09EAA /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainPageViewController.m; path = Controllers/MainPage/MainPageViewController.m; sourceTree = "<group>"; };
 		FFFB4B581CBFF1BA00F09EAA /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPageViewController.xib; path = Controllers/MainPage/MainPageViewController.xib; sourceTree = "<group>"; };
@@ -288,7 +296,6 @@
 				FFD30AFB1CBFEB59006DE031 /* AppDelegate.h */,
 				FFD30AFC1CBFEB59006DE031 /* AppDelegate.m */,
 				FFD30B041CBFEB59006DE031 /* Assets.xcassets */,
-				FFD30B061CBFEB59006DE031 /* LaunchScreen.storyboard */,
 				FFD30B091CBFEB59006DE031 /* Info.plist */,
 				FFD30AF81CBFEB59006DE031 /* Supporting Files */,
 			);
@@ -387,6 +394,12 @@
 				FFFB4B5B1CBFF51300F09EAA /* WebViewController.h */,
 				FFFB4B5C1CBFF51300F09EAA /* WebViewController.m */,
 				FFFB4B5D1CBFF51300F09EAA /* WebViewController.xib */,
+				FFDD31201CCD0E7D00438DCC /* MainViewController.h */,
+				FFDD31211CCD0E7D00438DCC /* MainViewController.m */,
+				FFDD31221CCD0E7D00438DCC /* MainViewController.xib */,
+				FFDD31411CCD23EF00438DCC /* PageViewController.h */,
+				FFDD31421CCD23EF00438DCC /* PageViewController.m */,
+				FFDD31431CCD23EF00438DCC /* PageViewController.xib */,
 			);
 			name = MainPage;
 			sourceTree = "<group>";
@@ -470,8 +483,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFD30B081CBFEB59006DE031 /* LaunchScreen.storyboard in Resources */,
+				FFDD31451CCD23EF00438DCC /* PageViewController.xib in Resources */,
 				FFBA5BF21CC5307600B22580 /* OrdersListViewController.xib in Resources */,
+				FFDD31241CCD0E7D00438DCC /* MainViewController.xib in Resources */,
 				FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */,
 				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
 				FF095CF41CC393E10035C619 /* AgentRegisterViewController.xib in Resources */,
@@ -551,6 +565,7 @@
 				FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */,
 				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
 				FFBA5C011CC5382600B22580 /* OrderTableViewCell.m in Sources */,
+				FFDD31441CCD23EF00438DCC /* PageViewController.m in Sources */,
 				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
 				FF095CEB1CC38AE10035C619 /* AgentInfoDAO.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
@@ -561,6 +576,7 @@
 				FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
 				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
+				FFDD31231CCD0E7D00438DCC /* MainViewController.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
 				FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */,
 				FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */,
@@ -574,17 +590,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FFD30B061CBFEB59006DE031 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFD30B071CBFEB59006DE031 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FFD30B0A1CBFEB59006DE031 /* Debug */ = {
@@ -674,6 +679,7 @@
 			baseConfigurationReference = 42EDE5CA90F14EBD4A105427 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -692,6 +698,7 @@
 			baseConfigurationReference = 3528737886DD1CA12D4B58A2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
