@@ -49,7 +49,7 @@
     NSArray *colorArray = @[
                             [UIColor redColor], /**< 选中的标题颜色 Title SelectColor  **/
                             [UIColor grayColor], /**< 未选中的标题颜色  Title UnselectColor **/
-                            [UIColor greenColor], /**< 下划线颜色 Underline Color   **/
+                            [UIColor redColor], /**< 下划线颜色 Underline Color   **/
                             [UIColor whiteColor], /**<  上方菜单栏的背景颜色 TopTab Background Color   **/
                             ];
     

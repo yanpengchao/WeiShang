@@ -57,10 +57,11 @@
 - (void)setTitleArray:(NSArray *)titleArray {
     titlesArray = titleArray;
     arrayCount = titleArray.count;
-    self.topTab.frame = CGRectMake(0, 0, FUll_VIEW_WIDTH, PageBtn);
-    self.scrollView.frame = CGRectMake(0, PageBtn, FUll_VIEW_WIDTH, FUll_VIEW_HEIGHT - PageBtn - TabbarHeight);
-    [self addSubview:self.topTab];
+    self.topTab.frame = CGRectMake(0, 20, FUll_VIEW_WIDTH, PageBtn);
+    self.scrollView.frame = CGRectMake(0, PageBtn + 20, FUll_VIEW_WIDTH, FUll_VIEW_HEIGHT - PageBtn - TabbarHeight - 20);
+    
     [self addSubview:self.scrollView];
+    [self addSubview:self.topTab];
 }
 
 - (void)setTitleScale:(CGFloat)titleScale {
@@ -171,6 +172,12 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (scrollView.tag == 318) {
+        CGPoint point = scrollView.contentOffset;
+        if (point.y < .0f) {
+            point.y = .0f;
+            [_scrollView setContentOffset:point animated:NO];
+        }
+        
         NSInteger yourPage = (NSInteger)((scrollView.contentOffset.x + FUll_VIEW_WIDTH / 2) / FUll_VIEW_WIDTH);
         CGFloat yourCount = 1.0 / arrayCount;
         if (arrayCount > 5) {
