@@ -14,6 +14,16 @@
     [super awakeFromNib];
     
     // Initialization code
+    _stepperSubButton.layer.borderWidth = 1;
+    _stepperSubButton.layer.borderColor = [[UIColor grayColor] CGColor];
+    
+    _stepperAddButton.layer.borderWidth = 1;
+    _stepperAddButton.layer.borderColor = [[UIColor grayColor] CGColor];
+    
+    _stepperRootView.layer.borderWidth = 1;
+    _stepperRootView.layer.borderColor = [[UIColor grayColor] CGColor];
+    _stepperRootView.layer.cornerRadius = 3;
+    _stepperRootView.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
