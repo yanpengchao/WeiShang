@@ -28,10 +28,16 @@
                                 <constraint firstAttribute="height" constant="30" id="qOh-1c-Jaj"/>
                             </constraints>
                             <state key="normal" title="新建订单"/>
+                            <connections>
+                                <action selector="createOrderButtonClicked:" destination="-1" eventType="touchUpInside" id="wMw-9h-vQJ"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rl-C4-TQM">
                             <rect key="frame" x="215" y="7" width="72" height="30"/>
                             <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="-1" eventType="touchUpInside" id="b78-nx-Rh7"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：100000元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVs-By-zy7">
                             <rect key="frame" x="8" y="11" width="199" height="21"/>

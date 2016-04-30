@@ -7,6 +7,10 @@
 //
 
 #import "GoodsPageViewController.h"
+#import "GoodsInfoTableViewCell.h"
+#import "UIImageView+WebCache.h"
+
+static NSString *CellTableIdentifier = @"GoodsInfoTableViewCell";
 
 @interface GoodsPageViewController ()
 
@@ -22,6 +26,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UINib *cellNib = [UINib nibWithNibName:@"GoodsInfoTableViewCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:CellTableIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,22 +38,23 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 10;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    GoodsInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
+    [self updateCell:cell withInfo:nil];
     return cell;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 66;
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -108,5 +115,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - private functions
+
+- (void)updateCell:(GoodsInfoTableViewCell*)cell withInfo:(NSObject*)info
+{
+    NSURL* url = [NSURL URLWithString:@"http://www.iconpng.com/download/png/1135"];
+    UIImage* placeholderImage = [UIImage imageNamed:@"downloading"];
+    [cell.goodsImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
+}
 
 @end

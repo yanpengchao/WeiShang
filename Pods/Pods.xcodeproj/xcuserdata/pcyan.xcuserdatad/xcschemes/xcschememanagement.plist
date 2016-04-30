@@ -64,11 +64,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PKYStepper.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -98,11 +93,6 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>04A296A865CCE18C8AED65CAEC34D184</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>165F5A81ECA93DBF397015EDDEF912E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -172,7 +162,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C70E3A5303672B8E1C0B4054B4EB062B</key>
+		<key>E383FE11EB6A4EA6E62787CC0B267BC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

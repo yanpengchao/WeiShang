@@ -86,4 +86,13 @@
     [self.navigationController setNavigationBarHidden:NO];
 }
 
+#pragma mark - action functions
+
+- (IBAction)cancelButtonClicked:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)createOrderButtonClicked:(id)sender {
+}
+
 @end
