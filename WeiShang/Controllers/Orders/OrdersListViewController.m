@@ -11,19 +11,24 @@
 #import "SubOrdersTableViewCell.h"
 #import "MyOrderDAO.h"
 #import "SubOrderDAO.h"
+#import "GoodsDAO.h"
+#import "OrderHeaderView.h"
 
 #import "UIImageView+WebCache.h"
 
 static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
 static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
 
-@interface OrdersListViewController () <UIScrollViewDelegate, UISearchBarDelegate, UIScrollViewDelegate>
+@interface OrdersListViewController () <UIScrollViewDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong)UISegmentedControl* segmentedControl;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UITableView *myOrdersTableView;
-@property (weak, nonatomic) IBOutlet UITableView *subOrdersTableView;
-@property (nonatomic, strong)UISearchBar* customSearchBar;
+@property (nonatomic, strong)UISegmentedControl* segmentedControl;              //
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;                  //
+@property (weak, nonatomic) IBOutlet UITableView *myOrdersTableView;            //
+@property (weak, nonatomic) IBOutlet UITableView *subOrdersTableView;           //
+@property (nonatomic, strong)UISearchBar* customSearchBar;                      //
+
+@property (nonatomic, strong)NSArray* myOrderList;                              // 我的订单
+@property (nonatomic, strong)NSArray* subOrderList;                             // 下级订单
 
 @end
 
@@ -32,6 +37,7 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self fakeData];
     [self addCustomNaviBar];
     [self addNaviButtons];
     
@@ -194,44 +200,164 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
 
 #pragma mark - private functions
 
-- (void)updateMyCell:(MyOrdersTableViewCell*)cell withInfo:(MyOrderDAO*)info
+- (void)fakeData
 {
-    NSURL* url = [NSURL URLWithString:@"http://www.iconpng.com/download/png/1135"];
-    UIImage* placeholderImage = [UIImage imageNamed:@"downloading"];
-    [cell.goodsImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
+    MyOrderDAO* myOrder = [[MyOrderDAO alloc] init];
+    myOrder.orderId = @"1";
+    myOrder.state = eOrderStateChecking;
+    
+    NSMutableArray* mGoodsArray = [NSMutableArray array];
+    GoodsDAO* goods = [[GoodsDAO alloc] init];
+    goods.goodsId = @"1";
+    goods.imageUrl = @"http://c.hiphotos.baidu.com/image/pic/item/d439b6003af33a876bcce3f7c35c10385243b5be.jpg";
+    goods.name = @"祖传贴膜";
+    goods.price = 100.0f;
+    goods.unit = @"张";
+    goods.state = eGoodsStateChecked;
+    goods.carriage = 10.0f;
+    goods.count = 10;
+    goods.stateDetail = @"商品暂时缺货，需要临时调度";
+    [mGoodsArray addObject:goods];
+    
+    goods = [[GoodsDAO alloc] init];
+    goods.goodsId = @"2";
+    goods.imageUrl = @"http://c.hiphotos.baidu.com/image/pic/item/d439b6003af33a876bcce3f7c35c10385243b5be.jpg";
+    goods.name = @"iPhone 6S手机，双卡双待";
+    goods.price = 10000.0f;
+    goods.unit = @"台";
+    goods.state = eGoodsStatePayed;
+    goods.carriage = 100.0f;
+    goods.count = 10;
+    goods.stateDetail = @"已付款，马上就要发货了哈";
+    [mGoodsArray addObject:goods];
+    
+    myOrder.goodsArray = mGoodsArray;
+    
+    NSMutableArray* mOrderArray = [NSMutableArray array];
+    [mOrderArray addObject:myOrder];
+    
+    self.myOrderList = mOrderArray;
+    
+    
+    // 下级订单
+    SubOrderDAO* subOrder = [[SubOrderDAO alloc] init];
+    subOrder.orderId = @"1";
+    subOrder.state = eOrderStateChecking;
+    
+    mGoodsArray = [NSMutableArray array];
+    goods = [[GoodsDAO alloc] init];
+    goods.goodsId = @"1";
+    goods.imageUrl = @"http://c.hiphotos.baidu.com/image/pic/item/d439b6003af33a876bcce3f7c35c10385243b5be.jpg";
+    goods.name = @"祖传贴膜";
+    goods.price = 100.0f;
+    goods.unit = @"张";
+    goods.state = eGoodsStateChecked;
+    goods.carriage = 10.0f;
+    goods.count = 10;
+    goods.stateDetail = @"商品暂时缺货，需要临时调度";
+    
+    [mGoodsArray addObject:goods];
+    subOrder.goodsArray = mGoodsArray;
+    
+    mOrderArray = [NSMutableArray array];
+    [mOrderArray addObject:subOrder];
+    
+    self.subOrderList = mOrderArray;
 }
 
-- (void)updateSubCell:(SubOrdersTableViewCell*)cell withInfo:(SubOrderDAO*)info
+- (void)updateMyOrderHeaderView:(OrderHeaderView*)view withInfo:(MyOrderDAO*)info
 {
-    NSURL* url = [NSURL URLWithString:@"http://www.iconpng.com/download/png/10307"];
+    view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", info.orderId];
+    view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", [MyOrderDAO stateStringWithState:info.state]];
+}
+
+- (void)updateSubOrderHeaderView:(OrderHeaderView*)view withInfo:(SubOrderDAO*)info
+{
+    view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", info.orderId];
+    view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", [MyOrderDAO stateStringWithState:info.state]];
+}
+
+- (void)updateMyCell:(MyOrdersTableViewCell*)cell withInfo:(GoodsDAO*)info
+{
+    NSURL* url = [NSURL URLWithString:info.imageUrl];
     UIImage* placeholderImage = [UIImage imageNamed:@"downloading"];
     [cell.goodsImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
+    
+    cell.goodsNameLabel.text = info.name;
+    cell.goodsStateLabel.text = [GoodsDAO stateStringWithState:info.state];
+    cell.goodsCountLabel.text = [NSString stringWithFormat:@"x%.00f", info.count];
+    cell.goodsPriceLabel.text = [NSString stringWithFormat:@"￥%.02f", info.price];
+    cell.goodsStateDetailLabel.text = info.stateDetail;
+    cell.goodsCarriageLabel.text = [NSString stringWithFormat:@"运费：%.02f", info.carriage];
+}
+
+- (void)updateSubCell:(SubOrdersTableViewCell*)cell withInfo:(GoodsDAO*)info
+{
+    NSURL* url = [NSURL URLWithString:info.imageUrl];
+    UIImage* placeholderImage = [UIImage imageNamed:@"downloading"];
+    [cell.goodsImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
+    
+    cell.goodsNameLabel.text = info.name;
+    cell.goodsStateLabel.text = [GoodsDAO stateStringWithState:info.state];
+    cell.goodsCountLabel.text = [NSString stringWithFormat:@"x%.00f", info.count];
+    cell.goodsPriceLabel.text = [NSString stringWithFormat:@"￥%.02f", info.price];
+    cell.goodsStateDetailLabel.text = info.stateDetail;
+    cell.goodsCarriageLabel.text = [NSString stringWithFormat:@"运费：%.02f", info.carriage];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    if (tableView == self.myOrdersTableView)
+        return [self.myOrderList count];
+    
+    return [self.subOrderList count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return [self.agentInfoList count];
-    return 20;
+    if (tableView == self.myOrdersTableView) {
+        MyOrderDAO* dao = self.myOrderList[section];
+        return [dao.goodsArray count];
+    }
+    else {
+        SubOrderDAO* dao = self.subOrderList[section];
+        return [dao.goodsArray count];
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 32;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    OrderHeaderView* orderHeaderView = [OrderHeaderView createView];
+    orderHeaderView.frame = (CGRect){0, 0, self.view.frame.size.width, 32};
+    if (tableView == self.myOrdersTableView) {
+        MyOrderDAO* dao = self.myOrderList[section];
+        [self updateMyOrderHeaderView:orderHeaderView withInfo:dao];
+    }
+    else {
+        SubOrderDAO* dao = self.subOrderList[section];
+        [self updateSubOrderHeaderView:orderHeaderView withInfo:dao];
+    }
+    return orderHeaderView;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    AgentInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
-//    AgentInfoDAO* info = self.agentInfoList[indexPath.row];
-//    [self updateCell:cell withInfo:info];
-    
     if (tableView == self.myOrdersTableView) {
         MyOrdersTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyOrderCellTableIdentifier];
-        [self updateMyCell:cell withInfo:nil];
+        MyOrderDAO* orderDao = self.myOrderList[indexPath.section];
+        GoodsDAO* goodsDao = orderDao.goodsArray[indexPath.row];
+        [self updateMyCell:cell withInfo:goodsDao];
         return cell;
     }
     else {
         SubOrdersTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SubOrderCellTableIdentifier];
-        [self updateSubCell:cell withInfo:nil];
+        SubOrderDAO* orderDao = self.subOrderList[indexPath.section];
+        GoodsDAO* goodsDao = orderDao.goodsArray[indexPath.row];
+        [self updateSubCell:cell withInfo:goodsDao];
         return cell;
     }
 }
