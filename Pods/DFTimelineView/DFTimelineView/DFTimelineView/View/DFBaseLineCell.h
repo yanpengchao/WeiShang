@@ -14,11 +14,11 @@
 
 #define Margin 15
 
-#define Padding 10
+#define Padding 5
 
-#define UserAvatarSize 40
+#define UserAvatarSize 0
 
-#define  BodyMaxWidth [UIScreen mainScreen].bounds.size.width - UserAvatarSize - 3*Margin
+#define  BodyMaxWidth [UIScreen mainScreen].bounds.size.width - UserAvatarSize - 2*Margin
 
 
 

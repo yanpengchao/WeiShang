@@ -7,6 +7,8 @@
 //
 
 #import "PageViewController.h"
+#import "WebViewController.h"
+#import "SVProgressHUD.h"
 
 @interface PageViewController ()
 
@@ -49,5 +51,35 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UIWebViewDelegate functions
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    if (UIWebViewNavigationTypeLinkClicked == navigationType) {
+        WebViewController* webViewController = [[WebViewController alloc] init];
+        webViewController.urlString = request.URL.absoluteString;
+        [self.navigationController pushViewController:webViewController animated:YES];
+        return NO;
+    }
+    return YES;
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+    [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+    [SVProgressHUD show];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [SVProgressHUD dismissWithDelay:.3];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error
+{
+    [SVProgressHUD dismissWithDelay:.3];
+}
 
 @end

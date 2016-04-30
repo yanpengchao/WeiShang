@@ -227,6 +227,13 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		FF2A16831CD4C8F50048D3BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FFB6890C1CC68DA1008EF0D2 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +321,7 @@
 		FFD30B0F1CBFECED006DE031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A16831CD4C8F50048D3BA /* Products */,
 				FF095CDA1CC387BF0035C619 /* AgentAuth */,
 				FFBA5BF31CC5376400B22580 /* Orders */,
 				FFD30B1D1CBFED78006DE031 /* Common */,

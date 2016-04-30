@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0C14DAD4A02EA57B633FAD9A'
+               BlueprintIdentifier = '1CA72775FBBD7067EECF3374'
                BlueprintName = 'DFTimelineView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libDFTimelineView.a'>

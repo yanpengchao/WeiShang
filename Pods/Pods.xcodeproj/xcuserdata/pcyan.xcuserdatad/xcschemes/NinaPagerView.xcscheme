@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '90C0BD552E11ED75913333B0'
+               BlueprintIdentifier = '3B4F089048BAD7E4A2AB1104'
                BlueprintName = 'NinaPagerView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libNinaPagerView.a'>
