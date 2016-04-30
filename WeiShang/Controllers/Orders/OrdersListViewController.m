@@ -13,8 +13,8 @@
 #import "SubOrderDAO.h"
 #import "GoodsDAO.h"
 #import "OrderHeaderView.h"
-
 #import "UIImageView+WebCache.h"
+#import "GoodsListViewController.h"
 
 static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
 static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
@@ -139,7 +139,8 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
 
 - (void)addOrder
 {
-    //
+    GoodsListViewController* vc = [[GoodsListViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)showSearchBar

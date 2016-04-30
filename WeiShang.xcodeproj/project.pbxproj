@@ -25,6 +25,10 @@
 		FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FF095D091CC3E0090035C619 /* DYAuthorizationStatus.m */; };
 		FF2A16891CD4F0440048D3BA /* OrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16881CD4F0440048D3BA /* OrderHeaderView.m */; };
 		FF2A168B1CD4F0570048D3BA /* OrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A168A1CD4F0570048D3BA /* OrderHeaderView.xib */; };
+		FF2A168F1CD501B20048D3BA /* GoodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A168D1CD501B20048D3BA /* GoodsListViewController.m */; };
+		FF2A16901CD501B20048D3BA /* GoodsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A168E1CD501B20048D3BA /* GoodsListViewController.xib */; };
+		FF2A16941CD5026E0048D3BA /* GoodsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16921CD5026E0048D3BA /* GoodsPageViewController.m */; };
+		FF2A16951CD5026E0048D3BA /* GoodsPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16931CD5026E0048D3BA /* GoodsPageViewController.xib */; };
 		FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */; };
 		FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */; };
 		FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */; };
@@ -90,6 +94,12 @@
 		FF2A16871CD4F0440048D3BA /* OrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderHeaderView.h; path = Views/Orders/OrderHeaderView.h; sourceTree = "<group>"; };
 		FF2A16881CD4F0440048D3BA /* OrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderHeaderView.m; path = Views/Orders/OrderHeaderView.m; sourceTree = "<group>"; };
 		FF2A168A1CD4F0570048D3BA /* OrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderHeaderView.xib; path = Views/Orders/OrderHeaderView.xib; sourceTree = "<group>"; };
+		FF2A168C1CD501B20048D3BA /* GoodsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsListViewController.h; path = Controllers/Orders/GoodsListViewController.h; sourceTree = "<group>"; };
+		FF2A168D1CD501B20048D3BA /* GoodsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsListViewController.m; path = Controllers/Orders/GoodsListViewController.m; sourceTree = "<group>"; };
+		FF2A168E1CD501B20048D3BA /* GoodsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GoodsListViewController.xib; path = Controllers/Orders/GoodsListViewController.xib; sourceTree = "<group>"; };
+		FF2A16911CD5026E0048D3BA /* GoodsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsPageViewController.h; path = Controllers/Orders/GoodsPageViewController.h; sourceTree = "<group>"; };
+		FF2A16921CD5026E0048D3BA /* GoodsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsPageViewController.m; path = Controllers/Orders/GoodsPageViewController.m; sourceTree = "<group>"; };
+		FF2A16931CD5026E0048D3BA /* GoodsPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GoodsPageViewController.xib; path = Controllers/Orders/GoodsPageViewController.xib; sourceTree = "<group>"; };
 		FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsDAO.h; path = Models/DAO/Orders/GoodsDAO.h; sourceTree = "<group>"; };
 		FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsDAO.m; path = Models/DAO/Orders/GoodsDAO.m; sourceTree = "<group>"; };
 		FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseOrderDAO.h; path = Models/DAO/Orders/BaseOrderDAO.h; sourceTree = "<group>"; };
@@ -260,6 +270,12 @@
 				FFBA5BEE1CC5307600B22580 /* OrdersListViewController.h */,
 				FFBA5BEF1CC5307600B22580 /* OrdersListViewController.m */,
 				FFBA5BF01CC5307600B22580 /* OrdersListViewController.xib */,
+				FF2A168C1CD501B20048D3BA /* GoodsListViewController.h */,
+				FF2A168D1CD501B20048D3BA /* GoodsListViewController.m */,
+				FF2A168E1CD501B20048D3BA /* GoodsListViewController.xib */,
+				FF2A16911CD5026E0048D3BA /* GoodsPageViewController.h */,
+				FF2A16921CD5026E0048D3BA /* GoodsPageViewController.m */,
+				FF2A16931CD5026E0048D3BA /* GoodsPageViewController.xib */,
 			);
 			name = Orders;
 			sourceTree = "<group>";
@@ -500,8 +516,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDD31451CCD23EF00438DCC /* PageViewController.xib in Resources */,
+				FF2A16951CD5026E0048D3BA /* GoodsPageViewController.xib in Resources */,
 				FFBA5BF21CC5307600B22580 /* OrdersListViewController.xib in Resources */,
 				FFDD31241CCD0E7D00438DCC /* MainViewController.xib in Resources */,
+				FF2A16901CD501B20048D3BA /* GoodsListViewController.xib in Resources */,
 				FF2A168B1CD4F0570048D3BA /* OrderHeaderView.xib in Resources */,
 				FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */,
 				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
@@ -591,10 +609,12 @@
 				FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */,
 				FF095CEF1CC38E610035C619 /* AgentRegisterInfoDAO.m in Sources */,
 				FF095CF31CC393E10035C619 /* AgentRegisterViewController.m in Sources */,
+				FF2A168F1CD501B20048D3BA /* GoodsListViewController.m in Sources */,
 				FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
 				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
 				FFDD31231CCD0E7D00438DCC /* MainViewController.m in Sources */,
+				FF2A16941CD5026E0048D3BA /* GoodsPageViewController.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
 				FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */,
 				FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */,
