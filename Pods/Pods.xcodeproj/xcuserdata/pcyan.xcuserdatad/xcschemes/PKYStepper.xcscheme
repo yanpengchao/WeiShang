@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CA72B4C449D6387B24EFFD67'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = 'CAF953FC2C44FC28DF82B44F'
+               BlueprintName = 'PKYStepper'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libSDWebImage.a'>
+               BuildableName = 'libPKYStepper.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
