@@ -269,13 +269,13 @@ static NSString *SubOrderCellTableIdentifier = @"SubOrdersTableViewCell";
 - (void)updateMyOrderHeaderView:(OrderHeaderView*)view withInfo:(MyOrderDAO*)info
 {
     view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", info.orderId];
-    view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", [MyOrderDAO stateStringWithState:info.state]];
+    view.orderStateLabel.text = [MyOrderDAO stateStringWithState:info.state];
 }
 
 - (void)updateSubOrderHeaderView:(OrderHeaderView*)view withInfo:(SubOrderDAO*)info
 {
     view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", info.orderId];
-    view.orderIdLabel.text = [NSString stringWithFormat:@"订单编号：%@", [MyOrderDAO stateStringWithState:info.state]];
+    view.orderStateLabel.text = [SubOrderDAO stateStringWithState:info.state];
 }
 
 - (void)updateMyCell:(MyOrdersTableViewCell*)cell withInfo:(GoodsDAO*)info

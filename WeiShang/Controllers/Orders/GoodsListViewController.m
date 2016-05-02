@@ -9,6 +9,7 @@
 #import "GoodsListViewController.h"
 #import "NinaPagerView.h"
 #import "GoodsPageViewController.h"
+#import "EditOrderViewController.h"
 
 @interface GoodsListViewController ()
 
@@ -93,6 +94,11 @@
 }
 
 - (IBAction)createOrderButtonClicked:(id)sender {
+    static BOOL sFlag = NO;
+    EditOrderViewController* editVC = [[EditOrderViewController alloc] init];
+    editVC.directOrder = sFlag;
+    [self.navigationController pushViewController:editVC animated:YES];
+    sFlag = !sFlag;
 }
 
 @end

@@ -31,6 +31,15 @@
 		FF2A16951CD5026E0048D3BA /* GoodsPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16931CD5026E0048D3BA /* GoodsPageViewController.xib */; };
 		FF2A16991CD50D4B0048D3BA /* GoodsInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16971CD50D4B0048D3BA /* GoodsInfoTableViewCell.m */; };
 		FF2A169A1CD50D4B0048D3BA /* GoodsInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16981CD50D4B0048D3BA /* GoodsInfoTableViewCell.xib */; };
+		FF2A169E1CD734090048D3BA /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A169D1CD734090048D3BA /* CKCalendarView.m */; };
+		FF2A16A21CD7A9280048D3BA /* EditOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16A01CD7A9280048D3BA /* EditOrderViewController.m */; };
+		FF2A16A31CD7A9280048D3BA /* EditOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16A11CD7A9280048D3BA /* EditOrderViewController.xib */; };
+		FF2A16A61CD7B0640048D3BA /* OrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16A51CD7B0640048D3BA /* OrderFooterView.m */; };
+		FF2A16A81CD7B0750048D3BA /* OrderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16A71CD7B0750048D3BA /* OrderFooterView.xib */; };
+		FF2A16AC1CD7B3380048D3BA /* TextWithEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16AA1CD7B3380048D3BA /* TextWithEditCell.m */; };
+		FF2A16AD1CD7B3380048D3BA /* TextWithEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16AB1CD7B3380048D3BA /* TextWithEditCell.xib */; };
+		FF2A16B01CD7BC120048D3BA /* EditOrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16AF1CD7BC120048D3BA /* EditOrderFooterView.m */; };
+		FF2A16B21CD7BC1F0048D3BA /* EditOrderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16B11CD7BC1F0048D3BA /* EditOrderFooterView.xib */; };
 		FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */; };
 		FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */; };
 		FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */; };
@@ -103,6 +112,20 @@
 		FF2A16961CD50D4B0048D3BA /* GoodsInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsInfoTableViewCell.h; path = Views/Orders/GoodsInfoTableViewCell.h; sourceTree = "<group>"; };
 		FF2A16971CD50D4B0048D3BA /* GoodsInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsInfoTableViewCell.m; path = Views/Orders/GoodsInfoTableViewCell.m; sourceTree = "<group>"; };
 		FF2A16981CD50D4B0048D3BA /* GoodsInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GoodsInfoTableViewCell.xib; path = Views/Orders/GoodsInfoTableViewCell.xib; sourceTree = "<group>"; };
+		FF2A169C1CD734090048D3BA /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKCalendarView.h; path = Views/Common/CKCalendarView.h; sourceTree = "<group>"; };
+		FF2A169D1CD734090048D3BA /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKCalendarView.m; path = Views/Common/CKCalendarView.m; sourceTree = "<group>"; };
+		FF2A169F1CD7A9280048D3BA /* EditOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditOrderViewController.h; path = Controllers/Orders/EditOrderViewController.h; sourceTree = "<group>"; };
+		FF2A16A01CD7A9280048D3BA /* EditOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditOrderViewController.m; path = Controllers/Orders/EditOrderViewController.m; sourceTree = "<group>"; };
+		FF2A16A11CD7A9280048D3BA /* EditOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditOrderViewController.xib; path = Controllers/Orders/EditOrderViewController.xib; sourceTree = "<group>"; };
+		FF2A16A41CD7B0640048D3BA /* OrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderFooterView.h; path = Views/Orders/OrderFooterView.h; sourceTree = "<group>"; };
+		FF2A16A51CD7B0640048D3BA /* OrderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderFooterView.m; path = Views/Orders/OrderFooterView.m; sourceTree = "<group>"; };
+		FF2A16A71CD7B0750048D3BA /* OrderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderFooterView.xib; path = Views/Orders/OrderFooterView.xib; sourceTree = "<group>"; };
+		FF2A16A91CD7B3380048D3BA /* TextWithEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextWithEditCell.h; path = Views/Orders/TextWithEditCell.h; sourceTree = "<group>"; };
+		FF2A16AA1CD7B3380048D3BA /* TextWithEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextWithEditCell.m; path = Views/Orders/TextWithEditCell.m; sourceTree = "<group>"; };
+		FF2A16AB1CD7B3380048D3BA /* TextWithEditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextWithEditCell.xib; path = Views/Orders/TextWithEditCell.xib; sourceTree = "<group>"; };
+		FF2A16AE1CD7BC120048D3BA /* EditOrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditOrderFooterView.h; path = Views/Orders/EditOrderFooterView.h; sourceTree = "<group>"; };
+		FF2A16AF1CD7BC120048D3BA /* EditOrderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditOrderFooterView.m; path = Views/Orders/EditOrderFooterView.m; sourceTree = "<group>"; };
+		FF2A16B11CD7BC1F0048D3BA /* EditOrderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditOrderFooterView.xib; path = Views/Orders/EditOrderFooterView.xib; sourceTree = "<group>"; };
 		FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsDAO.h; path = Models/DAO/Orders/GoodsDAO.h; sourceTree = "<group>"; };
 		FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsDAO.m; path = Models/DAO/Orders/GoodsDAO.m; sourceTree = "<group>"; };
 		FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseOrderDAO.h; path = Models/DAO/Orders/BaseOrderDAO.h; sourceTree = "<group>"; };
@@ -276,6 +299,9 @@
 				FF2A16911CD5026E0048D3BA /* GoodsPageViewController.h */,
 				FF2A16921CD5026E0048D3BA /* GoodsPageViewController.m */,
 				FF2A16931CD5026E0048D3BA /* GoodsPageViewController.xib */,
+				FF2A169F1CD7A9280048D3BA /* EditOrderViewController.h */,
+				FF2A16A01CD7A9280048D3BA /* EditOrderViewController.m */,
+				FF2A16A11CD7A9280048D3BA /* EditOrderViewController.xib */,
 			);
 			name = Orders;
 			sourceTree = "<group>";
@@ -295,6 +321,15 @@
 				FF2A16961CD50D4B0048D3BA /* GoodsInfoTableViewCell.h */,
 				FF2A16971CD50D4B0048D3BA /* GoodsInfoTableViewCell.m */,
 				FF2A16981CD50D4B0048D3BA /* GoodsInfoTableViewCell.xib */,
+				FF2A16A41CD7B0640048D3BA /* OrderFooterView.h */,
+				FF2A16A51CD7B0640048D3BA /* OrderFooterView.m */,
+				FF2A16A71CD7B0750048D3BA /* OrderFooterView.xib */,
+				FF2A16A91CD7B3380048D3BA /* TextWithEditCell.h */,
+				FF2A16AA1CD7B3380048D3BA /* TextWithEditCell.m */,
+				FF2A16AB1CD7B3380048D3BA /* TextWithEditCell.xib */,
+				FF2A16AE1CD7BC120048D3BA /* EditOrderFooterView.h */,
+				FF2A16AF1CD7BC120048D3BA /* EditOrderFooterView.m */,
+				FF2A16B11CD7BC1F0048D3BA /* EditOrderFooterView.xib */,
 			);
 			name = Orders;
 			sourceTree = "<group>";
@@ -397,6 +432,8 @@
 		FFD30B1D1CBFED78006DE031 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A169C1CD734090048D3BA /* CKCalendarView.h */,
+				FF2A169D1CD734090048D3BA /* CKCalendarView.m */,
 				FFD30B1E1CBFED98006DE031 /* UIImage+Creation.m */,
 				FFD30B1F1CBFED98006DE031 /* UIImage+Creation.h */,
 			);
@@ -522,12 +559,16 @@
 				FF2A16901CD501B20048D3BA /* GoodsListViewController.xib in Resources */,
 				FF2A168B1CD4F0570048D3BA /* OrderHeaderView.xib in Resources */,
 				FF2A169A1CD50D4B0048D3BA /* GoodsInfoTableViewCell.xib in Resources */,
+				FF2A16A31CD7A9280048D3BA /* EditOrderViewController.xib in Resources */,
+				FF2A16AD1CD7B3380048D3BA /* TextWithEditCell.xib in Resources */,
+				FF2A16B21CD7BC1F0048D3BA /* EditOrderFooterView.xib in Resources */,
 				FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */,
 				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
 				FF095CF41CC393E10035C619 /* AgentRegisterViewController.xib in Resources */,
 				FF095CD81CC387730035C619 /* AgentsListViewController.xib in Resources */,
 				FFBA5BF81CC537AD00B22580 /* MyOrdersTableViewCell.xib in Resources */,
 				FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */,
+				FF2A16A81CD7B0750048D3BA /* OrderFooterView.xib in Resources */,
 				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
 				FF095CF91CC3BDB00035C619 /* AgentRegisterTableViewCell.xib in Resources */,
 				FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */,
@@ -598,11 +639,14 @@
 				FFBA5BF71CC537AD00B22580 /* MyOrdersTableViewCell.m in Sources */,
 				FFFB4B711CBFFBBF00F09EAA /* ProductsListViewController.m in Sources */,
 				FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */,
+				FF2A16AC1CD7B3380048D3BA /* TextWithEditCell.m in Sources */,
 				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
 				FFDD31441CCD23EF00438DCC /* PageViewController.m in Sources */,
 				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
+				FF2A16B01CD7BC120048D3BA /* EditOrderFooterView.m in Sources */,
 				FF2A16891CD4F0440048D3BA /* OrderHeaderView.m in Sources */,
 				FF095CEB1CC38AE10035C619 /* AgentInfoDAO.m in Sources */,
+				FF2A16A61CD7B0640048D3BA /* OrderFooterView.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
 				FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */,
 				FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */,
@@ -611,6 +655,7 @@
 				FF2A168F1CD501B20048D3BA /* GoodsListViewController.m in Sources */,
 				FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
+				FF2A16A21CD7A9280048D3BA /* EditOrderViewController.m in Sources */,
 				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
 				FFDD31231CCD0E7D00438DCC /* MainViewController.m in Sources */,
 				FF2A16941CD5026E0048D3BA /* GoodsPageViewController.m in Sources */,
@@ -620,6 +665,7 @@
 				FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */,
 				FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */,
 				FF095CD71CC387730035C619 /* AgentsListViewController.m in Sources */,
+				FF2A169E1CD734090048D3BA /* CKCalendarView.m in Sources */,
 				FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */,
 				FF095CDE1CC388120035C619 /* AgentInfoTableViewCell.m in Sources */,
 				FF2A16991CD50D4B0048D3BA /* GoodsInfoTableViewCell.m in Sources */,
