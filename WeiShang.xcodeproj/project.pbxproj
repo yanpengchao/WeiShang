@@ -40,6 +40,13 @@
 		FF2A16AD1CD7B3380048D3BA /* TextWithEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16AB1CD7B3380048D3BA /* TextWithEditCell.xib */; };
 		FF2A16B01CD7BC120048D3BA /* EditOrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16AF1CD7BC120048D3BA /* EditOrderFooterView.m */; };
 		FF2A16B21CD7BC1F0048D3BA /* EditOrderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16B11CD7BC1F0048D3BA /* EditOrderFooterView.xib */; };
+		FF2A16B71CD900730048D3BA /* SelectAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16B51CD900730048D3BA /* SelectAddressViewController.m */; };
+		FF2A16B81CD900730048D3BA /* SelectAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16B61CD900730048D3BA /* SelectAddressViewController.xib */; };
+		FF2A16BD1CD9018A0048D3BA /* DefaultAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16BB1CD9018A0048D3BA /* DefaultAddressCell.m */; };
+		FF2A16BE1CD9018A0048D3BA /* DefaultAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16BC1CD9018A0048D3BA /* DefaultAddressCell.xib */; };
+		FF2A16C21CD901BC0048D3BA /* NormalAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16C01CD901BC0048D3BA /* NormalAddressCell.m */; };
+		FF2A16C31CD901BC0048D3BA /* NormalAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16C11CD901BC0048D3BA /* NormalAddressCell.xib */; };
+		FF2A16C61CD901DC0048D3BA /* BasicAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16C51CD901DC0048D3BA /* BasicAddressCell.m */; };
 		FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */; };
 		FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */; };
 		FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */; };
@@ -126,6 +133,17 @@
 		FF2A16AE1CD7BC120048D3BA /* EditOrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditOrderFooterView.h; path = Views/Orders/EditOrderFooterView.h; sourceTree = "<group>"; };
 		FF2A16AF1CD7BC120048D3BA /* EditOrderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditOrderFooterView.m; path = Views/Orders/EditOrderFooterView.m; sourceTree = "<group>"; };
 		FF2A16B11CD7BC1F0048D3BA /* EditOrderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditOrderFooterView.xib; path = Views/Orders/EditOrderFooterView.xib; sourceTree = "<group>"; };
+		FF2A16B41CD900730048D3BA /* SelectAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectAddressViewController.h; path = Controllers/Orders/AddressInfo/SelectAddressViewController.h; sourceTree = "<group>"; };
+		FF2A16B51CD900730048D3BA /* SelectAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectAddressViewController.m; path = Controllers/Orders/AddressInfo/SelectAddressViewController.m; sourceTree = "<group>"; };
+		FF2A16B61CD900730048D3BA /* SelectAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectAddressViewController.xib; path = Controllers/Orders/AddressInfo/SelectAddressViewController.xib; sourceTree = "<group>"; };
+		FF2A16BA1CD9018A0048D3BA /* DefaultAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultAddressCell.h; path = Views/Orders/AddressInfo/DefaultAddressCell.h; sourceTree = "<group>"; };
+		FF2A16BB1CD9018A0048D3BA /* DefaultAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultAddressCell.m; path = Views/Orders/AddressInfo/DefaultAddressCell.m; sourceTree = "<group>"; };
+		FF2A16BC1CD9018A0048D3BA /* DefaultAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefaultAddressCell.xib; path = Views/Orders/AddressInfo/DefaultAddressCell.xib; sourceTree = "<group>"; };
+		FF2A16BF1CD901BC0048D3BA /* NormalAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NormalAddressCell.h; path = Views/Orders/AddressInfo/NormalAddressCell.h; sourceTree = "<group>"; };
+		FF2A16C01CD901BC0048D3BA /* NormalAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NormalAddressCell.m; path = Views/Orders/AddressInfo/NormalAddressCell.m; sourceTree = "<group>"; };
+		FF2A16C11CD901BC0048D3BA /* NormalAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NormalAddressCell.xib; path = Views/Orders/AddressInfo/NormalAddressCell.xib; sourceTree = "<group>"; };
+		FF2A16C41CD901DC0048D3BA /* BasicAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicAddressCell.h; path = Views/Orders/AddressInfo/BasicAddressCell.h; sourceTree = "<group>"; };
+		FF2A16C51CD901DC0048D3BA /* BasicAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicAddressCell.m; path = Views/Orders/AddressInfo/BasicAddressCell.m; sourceTree = "<group>"; };
 		FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsDAO.h; path = Models/DAO/Orders/GoodsDAO.h; sourceTree = "<group>"; };
 		FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsDAO.m; path = Models/DAO/Orders/GoodsDAO.m; sourceTree = "<group>"; };
 		FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseOrderDAO.h; path = Models/DAO/Orders/BaseOrderDAO.h; sourceTree = "<group>"; };
@@ -272,6 +290,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FF2A16B31CD900340048D3BA /* AddressInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A16B41CD900730048D3BA /* SelectAddressViewController.h */,
+				FF2A16B51CD900730048D3BA /* SelectAddressViewController.m */,
+				FF2A16B61CD900730048D3BA /* SelectAddressViewController.xib */,
+			);
+			name = AddressInfo;
+			sourceTree = "<group>";
+		};
+		FF2A16B91CD900840048D3BA /* AddressInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A16BA1CD9018A0048D3BA /* DefaultAddressCell.h */,
+				FF2A16BB1CD9018A0048D3BA /* DefaultAddressCell.m */,
+				FF2A16BC1CD9018A0048D3BA /* DefaultAddressCell.xib */,
+				FF2A16BF1CD901BC0048D3BA /* NormalAddressCell.h */,
+				FF2A16C01CD901BC0048D3BA /* NormalAddressCell.m */,
+				FF2A16C11CD901BC0048D3BA /* NormalAddressCell.xib */,
+				FF2A16C41CD901DC0048D3BA /* BasicAddressCell.h */,
+				FF2A16C51CD901DC0048D3BA /* BasicAddressCell.m */,
+			);
+			name = AddressInfo;
+			sourceTree = "<group>";
+		};
 		FFB6890C1CC68DA1008EF0D2 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +333,7 @@
 		FFBA5BE81CC52FA100B22580 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A16B31CD900340048D3BA /* AddressInfo */,
 				FFBA5BEE1CC5307600B22580 /* OrdersListViewController.h */,
 				FFBA5BEF1CC5307600B22580 /* OrdersListViewController.m */,
 				FFBA5BF01CC5307600B22580 /* OrdersListViewController.xib */,
@@ -309,6 +353,7 @@
 		FFBA5BF31CC5376400B22580 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A16B91CD900840048D3BA /* AddressInfo */,
 				FFBA5BF41CC537AD00B22580 /* MyOrdersTableViewCell.h */,
 				FFBA5BF51CC537AD00B22580 /* MyOrdersTableViewCell.m */,
 				FFBA5BF61CC537AD00B22580 /* MyOrdersTableViewCell.xib */,
@@ -552,6 +597,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2A16BE1CD9018A0048D3BA /* DefaultAddressCell.xib in Resources */,
 				FFDD31451CCD23EF00438DCC /* PageViewController.xib in Resources */,
 				FF2A16951CD5026E0048D3BA /* GoodsPageViewController.xib in Resources */,
 				FFBA5BF21CC5307600B22580 /* OrdersListViewController.xib in Resources */,
@@ -564,11 +610,13 @@
 				FF2A16B21CD7BC1F0048D3BA /* EditOrderFooterView.xib in Resources */,
 				FF095D061CC3D6920035C619 /* AgentRegisterFooterTableViewCell.xib in Resources */,
 				FFFB4B5A1CBFF1BA00F09EAA /* MainPageViewController.xib in Resources */,
+				FF2A16C31CD901BC0048D3BA /* NormalAddressCell.xib in Resources */,
 				FF095CF41CC393E10035C619 /* AgentRegisterViewController.xib in Resources */,
 				FF095CD81CC387730035C619 /* AgentsListViewController.xib in Resources */,
 				FFBA5BF81CC537AD00B22580 /* MyOrdersTableViewCell.xib in Resources */,
 				FFD30B051CBFEB59006DE031 /* Assets.xcassets in Resources */,
 				FF2A16A81CD7B0750048D3BA /* OrderFooterView.xib in Resources */,
+				FF2A16B81CD900730048D3BA /* SelectAddressViewController.xib in Resources */,
 				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
 				FF095CF91CC3BDB00035C619 /* AgentRegisterTableViewCell.xib in Resources */,
 				FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */,
@@ -649,17 +697,21 @@
 				FF2A16A61CD7B0640048D3BA /* OrderFooterView.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
 				FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */,
+				FF2A16BD1CD9018A0048D3BA /* DefaultAddressCell.m in Sources */,
 				FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */,
 				FF095CEF1CC38E610035C619 /* AgentRegisterInfoDAO.m in Sources */,
 				FF095CF31CC393E10035C619 /* AgentRegisterViewController.m in Sources */,
 				FF2A168F1CD501B20048D3BA /* GoodsListViewController.m in Sources */,
 				FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
+				FF2A16C61CD901DC0048D3BA /* BasicAddressCell.m in Sources */,
 				FF2A16A21CD7A9280048D3BA /* EditOrderViewController.m in Sources */,
 				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
 				FFDD31231CCD0E7D00438DCC /* MainViewController.m in Sources */,
 				FF2A16941CD5026E0048D3BA /* GoodsPageViewController.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
+				FF2A16B71CD900730048D3BA /* SelectAddressViewController.m in Sources */,
+				FF2A16C21CD901BC0048D3BA /* NormalAddressCell.m in Sources */,
 				FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */,
 				FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */,
 				FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */,

@@ -17,12 +17,32 @@
                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8v-84-7ne">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="eCS-0g-Llr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYg-Pb-TBk">
+                    <rect key="frame" x="0.0" y="31" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dLn-ae-Xmi"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="LYg-Pb-TBk" secondAttribute="trailing" id="6Zj-21-jK3"/>
+                <constraint firstItem="l8v-84-7ne" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8FM-fV-UJx"/>
+                <constraint firstAttribute="bottom" secondItem="LYg-Pb-TBk" secondAttribute="bottom" id="ImB-r7-O0o"/>
                 <constraint firstAttribute="bottom" secondItem="GWr-iW-bwV" secondAttribute="bottom" constant="6" id="TK5-we-DTI"/>
                 <constraint firstItem="GWr-iW-bwV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="aIg-97-fKx"/>
+                <constraint firstItem="LYg-Pb-TBk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="emu-y6-jOf"/>
+                <constraint firstItem="l8v-84-7ne" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h5n-Jl-oba"/>
                 <constraint firstAttribute="trailing" secondItem="GWr-iW-bwV" secondAttribute="trailing" constant="8" id="nb1-61-ouX"/>
+                <constraint firstAttribute="trailing" secondItem="l8v-84-7ne" secondAttribute="trailing" id="s31-bA-94R"/>
                 <constraint firstItem="GWr-iW-bwV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="xEW-HI-sSs"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

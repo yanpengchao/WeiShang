@@ -21,7 +21,11 @@
 + (instancetype)createView
 {
     NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"EditOrderFooterView" owner:nil options:nil];
-    return [nibContents lastObject];
+    EditOrderFooterView* footerView = [nibContents lastObject];
+    footerView.commitButton.layer.shadowOffset = CGSizeMake(0, 1);
+    footerView.commitButton.layer.shadowOpacity = 0.50;
+    
+    return footerView;
 }
 
 @end

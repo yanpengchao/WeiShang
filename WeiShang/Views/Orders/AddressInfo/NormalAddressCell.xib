@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NormalAddressCell" rowHeight="68" id="KGk-i7-Jjw" customClass="NormalAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-Ju-Glf">
+                        <rect key="frame" x="280" y="18" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="SXb-wF-mgt"/>
+                            <constraint firstAttribute="width" constant="32" id="VpS-aq-IjH"/>
+                        </constraints>
+                        <state key="normal" image="edit"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="徐存斌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-xb-LUz">
+                        <rect key="frame" x="8" y="5" width="53" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="Q4t-No-k3d"/>
+                            <constraint firstAttribute="height" constant="21" id="QDG-FD-60P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18621610732" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHt-gx-u5x">
+                        <rect key="frame" x="69" y="5" width="195" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="YuQ-rs-bfr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIS-9n-kGF">
+                        <rect key="frame" x="272" y="13" width="1" height="42"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="MBD-7L-ZMz"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海浦东新区周浦镇秀浦路2500弄6号楼803" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Var-aM-fAw">
+                        <rect key="frame" x="8" y="28" width="256" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="790-3U-abK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="Var-aM-fAw" secondAttribute="leading" id="7wV-Ol-JCR"/>
+                    <constraint firstItem="VyV-Ju-Glf" firstAttribute="leading" secondItem="NIS-9n-kGF" secondAttribute="trailing" constant="7" id="8We-eJ-gEL"/>
+                    <constraint firstItem="i6L-xb-LUz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="Fxc-wy-Rbo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="NIS-9n-kGF" secondAttribute="bottom" constant="4" id="L09-7o-qZD"/>
+                    <constraint firstItem="sHt-gx-u5x" firstAttribute="leading" secondItem="i6L-xb-LUz" secondAttribute="trailing" constant="8" id="LBe-og-7GU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Var-aM-fAw" secondAttribute="trailing" constant="48" id="M10-Di-7SJ"/>
+                    <constraint firstItem="sHt-gx-u5x" firstAttribute="centerY" secondItem="i6L-xb-LUz" secondAttribute="centerY" id="Qs6-dK-JWN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VyV-Ju-Glf" secondAttribute="trailing" id="VEs-pU-S52"/>
+                    <constraint firstItem="NIS-9n-kGF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Vcb-u6-biV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Var-aM-fAw" secondAttribute="bottom" constant="-4" id="ZTP-b0-1gZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sHt-gx-u5x" secondAttribute="trailing" constant="48" id="dl8-wV-bWD"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="i6L-xb-LUz" secondAttribute="leading" id="gbf-1k-IEh"/>
+                    <constraint firstItem="VyV-Ju-Glf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yJm-56-ajb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="Var-aM-fAw" id="Bfy-nM-THb"/>
+                <outlet property="editButton" destination="VyV-Ju-Glf" id="9Li-Ha-r6N"/>
+                <outlet property="nameLabel" destination="i6L-xb-LUz" id="8l8-5F-THl"/>
+                <outlet property="phoneNumberLabel" destination="sHt-gx-u5x" id="43E-N8-Vsp"/>
+            </connections>
+            <point key="canvasLocation" x="555" y="460"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="32" height="32"/>
+    </resources>
+</document>

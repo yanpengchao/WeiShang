@@ -30,14 +30,24 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVq-Eg-oqH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="eUn-Qj-sV6"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="TjT-Xf-GQ9" firstAttribute="leading" secondItem="SUJ-fy-hvJ" secondAttribute="trailing" constant="8" id="2lv-hZ-33v"/>
                 <constraint firstItem="SUJ-fy-hvJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="KbH-Oa-HWP"/>
+                <constraint firstItem="xVq-Eg-oqH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Koe-k3-8h5"/>
                 <constraint firstAttribute="trailing" secondItem="TjT-Xf-GQ9" secondAttribute="trailing" constant="8" id="Mdx-dO-Wy1"/>
                 <constraint firstItem="SUJ-fy-hvJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="R9t-EM-b1l"/>
+                <constraint firstAttribute="trailing" secondItem="xVq-Eg-oqH" secondAttribute="trailing" id="SXZ-kA-PDF"/>
                 <constraint firstItem="TjT-Xf-GQ9" firstAttribute="centerY" secondItem="SUJ-fy-hvJ" secondAttribute="centerY" id="oAE-20-g0q"/>
+                <constraint firstItem="xVq-Eg-oqH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ufg-Ed-BaK"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

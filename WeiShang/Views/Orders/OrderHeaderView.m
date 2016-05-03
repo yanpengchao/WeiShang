@@ -21,7 +21,9 @@
 + (instancetype)createView
 {
     NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"OrderHeaderView" owner:nil options:nil];
-    return [nibContents lastObject];
+    OrderHeaderView* headerView = [nibContents lastObject];
+    
+    return headerView;
 }
 
 @end
