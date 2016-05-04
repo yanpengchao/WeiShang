@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '82388C106926E90117470692'
+               BlueprintIdentifier = '39900A555C23D5F19C75B6AE'
                BlueprintName = 'DFCommon'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libDFCommon.a'>

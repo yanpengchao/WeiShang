@@ -1,39 +1,38 @@
 //
-//  SelectAddressViewController.m
+//  EditAddressViewController.m
 //  WeiShang
 //
-//  Created by 鄢彭超 on 16/5/3.
+//  Created by 鄢彭超 on 16/5/4.
 //  Copyright © 2016年 鄢彭超. All rights reserved.
 //
 
-#import "SelectAddressViewController.h"
-#import "DefaultAddressCell.h"
-#import "NormalAddressCell.h"
-#import "AddNewAddressFooterView.h"
 #import "EditAddressViewController.h"
-#import "Masonry.h"
+#import "UserMainInfoCell.h"
+#import "TextWithEditCell.h"
+#import "DefaultSettingCell.h"
 
-static NSString *DefaultAddressCellIdentifier = @"DefaultAddressCell";
-static NSString *NormalAddressCellIdentifier = @"NormalAddressCell";
+static NSString *TextWithEditCellIdentifier = @"TextWithEditCell";
+static NSString *UserMainInfoCellIdentifier = @"UserMainInfoCell";
+static NSString *DefaultSettingCellIdentifier = @"DefaultSettingCell";
 
-@interface SelectAddressViewController ()
-
-@property (nonatomic, strong)AddNewAddressFooterView* footerView;
+@interface EditAddressViewController ()
 
 @end
 
-@implementation SelectAddressViewController
+@implementation EditAddressViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UINib *cellNib = [UINib nibWithNibName:@"DefaultAddressCell" bundle:nil];
-    [self.tableView registerNib:cellNib forCellReuseIdentifier:DefaultAddressCellIdentifier];
+    UINib *cellNib = [UINib nibWithNibName:@"UserMainInfoCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:UserMainInfoCellIdentifier];
     
-    cellNib = [UINib nibWithNibName:@"NormalAddressCell" bundle:nil];
-    [self.tableView registerNib:cellNib forCellReuseIdentifier:NormalAddressCellIdentifier];
+    cellNib = [UINib nibWithNibName:@"TextWithEditCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:TextWithEditCellIdentifier];
     
-//    [self addTableViewFooterView];
+    cellNib = [UINib nibWithNibName:@"DefaultSettingCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:DefaultSettingCellIdentifier];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,13 +45,6 @@ static NSString *NormalAddressCellIdentifier = @"NormalAddressCell";
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [self addTableViewFooterView];
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -60,23 +52,52 @@ static NSString *NormalAddressCellIdentifier = @"NormalAddressCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    if (self.editFlag) {
+        return 3;
+    }
+    return 4;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 69;
+    switch (indexPath.row) {
+        case 0:
+            return 84;
+        case 1:
+            return 44;
+        case 2:
+            return 44;
+        case 3:
+            return 58;
+        default:
+            break;
+    }
+    
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        DefaultAddressCell *cell = [tableView dequeueReusableCellWithIdentifier:DefaultAddressCellIdentifier];
+        UserMainInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:UserMainInfoCellIdentifier];
+        return cell;
+    }
+    else if (indexPath.row == 1) {
+        TextWithEditCell *cell = [tableView dequeueReusableCellWithIdentifier:TextWithEditCellIdentifier];
+        cell.leftTextLabel.text = @"所在地区";
+        cell.rightEditTextField.placeholder = @"填写所在地区";
+        return cell;
+    }
+    else if (indexPath.row == 2) {
+        TextWithEditCell *cell = [tableView dequeueReusableCellWithIdentifier:TextWithEditCellIdentifier];
+        cell.leftTextLabel.text = @"详细地址";
+        cell.rightEditTextField.placeholder = @"街道、楼牌号等";
         return cell;
     }
     else {
-        NormalAddressCell *cell = [tableView dequeueReusableCellWithIdentifier:NormalAddressCellIdentifier];
+        DefaultSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:DefaultSettingCellIdentifier];
         return cell;
     }
+    return nil;
 }
 
 /*
@@ -138,35 +159,5 @@ static NSString *NormalAddressCellIdentifier = @"NormalAddressCell";
     // Pass the selected object to the new view controller.
 }
 */
-
-- (void)commitButtonClicked:(id)sender
-{
-    static BOOL editFlag = NO;
-    EditAddressViewController* editAddressVC = [[EditAddressViewController alloc] init];
-    editAddressVC.editFlag = editFlag;
-    [self.navigationController pushViewController:editAddressVC animated:YES];
-    editFlag = !editFlag;
-}
-
-- (void)addTableViewFooterView
-{
-    if (self.footerView == nil) {
-        AddNewAddressFooterView* footerView = [AddNewAddressFooterView createView];
-        [footerView.commitButton addTarget:self action:@selector(commitButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [self.tableView addSubview:footerView];
-        
-        CGRect tableViewBounds = self.tableView.bounds;
-        
-        [footerView mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.tableView).with.offset(0);
-            make.width.equalTo(self.tableView);
-            make.top.equalTo(self.tableView).with.offset(tableViewBounds.size.height - 38);
-            make.height.equalTo(@38);
-        }];
-        self.footerView = footerView;
-        
-//    self.tableView.tableFooterView = footerView;
-    }
-}
 
 @end

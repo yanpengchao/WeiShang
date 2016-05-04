@@ -47,6 +47,14 @@
 		FF2A16C21CD901BC0048D3BA /* NormalAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16C01CD901BC0048D3BA /* NormalAddressCell.m */; };
 		FF2A16C31CD901BC0048D3BA /* NormalAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16C11CD901BC0048D3BA /* NormalAddressCell.xib */; };
 		FF2A16C61CD901DC0048D3BA /* BasicAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16C51CD901DC0048D3BA /* BasicAddressCell.m */; };
+		FF2A16C91CDA44AE0048D3BA /* AddNewAddressFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16C81CDA44AE0048D3BA /* AddNewAddressFooterView.m */; };
+		FF2A16CB1CDA44C50048D3BA /* AddNewAddressFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16CA1CDA44C50048D3BA /* AddNewAddressFooterView.xib */; };
+		FF2A16CF1CDA4A020048D3BA /* EditAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16CD1CDA4A020048D3BA /* EditAddressViewController.m */; };
+		FF2A16D01CDA4A020048D3BA /* EditAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16CE1CDA4A020048D3BA /* EditAddressViewController.xib */; };
+		FF2A16D41CDA4B1C0048D3BA /* UserMainInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16D21CDA4B1C0048D3BA /* UserMainInfoCell.m */; };
+		FF2A16D51CDA4B1C0048D3BA /* UserMainInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16D31CDA4B1C0048D3BA /* UserMainInfoCell.xib */; };
+		FF2A16D91CDA52FA0048D3BA /* DefaultSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16D71CDA52FA0048D3BA /* DefaultSettingCell.m */; };
+		FF2A16DA1CDA52FA0048D3BA /* DefaultSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16D81CDA52FA0048D3BA /* DefaultSettingCell.xib */; };
 		FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */; };
 		FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */; };
 		FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */; };
@@ -144,6 +152,18 @@
 		FF2A16C11CD901BC0048D3BA /* NormalAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NormalAddressCell.xib; path = Views/Orders/AddressInfo/NormalAddressCell.xib; sourceTree = "<group>"; };
 		FF2A16C41CD901DC0048D3BA /* BasicAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicAddressCell.h; path = Views/Orders/AddressInfo/BasicAddressCell.h; sourceTree = "<group>"; };
 		FF2A16C51CD901DC0048D3BA /* BasicAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicAddressCell.m; path = Views/Orders/AddressInfo/BasicAddressCell.m; sourceTree = "<group>"; };
+		FF2A16C71CDA44AE0048D3BA /* AddNewAddressFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddNewAddressFooterView.h; path = Views/Orders/AddressInfo/AddNewAddressFooterView.h; sourceTree = "<group>"; };
+		FF2A16C81CDA44AE0048D3BA /* AddNewAddressFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddNewAddressFooterView.m; path = Views/Orders/AddressInfo/AddNewAddressFooterView.m; sourceTree = "<group>"; };
+		FF2A16CA1CDA44C50048D3BA /* AddNewAddressFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddNewAddressFooterView.xib; path = Views/Orders/AddressInfo/AddNewAddressFooterView.xib; sourceTree = "<group>"; };
+		FF2A16CC1CDA4A020048D3BA /* EditAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAddressViewController.h; sourceTree = "<group>"; };
+		FF2A16CD1CDA4A020048D3BA /* EditAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAddressViewController.m; sourceTree = "<group>"; };
+		FF2A16CE1CDA4A020048D3BA /* EditAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditAddressViewController.xib; sourceTree = "<group>"; };
+		FF2A16D11CDA4B1C0048D3BA /* UserMainInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserMainInfoCell.h; path = Views/Orders/AddressInfo/UserMainInfoCell.h; sourceTree = "<group>"; };
+		FF2A16D21CDA4B1C0048D3BA /* UserMainInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserMainInfoCell.m; path = Views/Orders/AddressInfo/UserMainInfoCell.m; sourceTree = "<group>"; };
+		FF2A16D31CDA4B1C0048D3BA /* UserMainInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserMainInfoCell.xib; path = Views/Orders/AddressInfo/UserMainInfoCell.xib; sourceTree = "<group>"; };
+		FF2A16D61CDA52FA0048D3BA /* DefaultSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultSettingCell.h; path = Views/Orders/AddressInfo/DefaultSettingCell.h; sourceTree = "<group>"; };
+		FF2A16D71CDA52FA0048D3BA /* DefaultSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultSettingCell.m; path = Views/Orders/AddressInfo/DefaultSettingCell.m; sourceTree = "<group>"; };
+		FF2A16D81CDA52FA0048D3BA /* DefaultSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefaultSettingCell.xib; path = Views/Orders/AddressInfo/DefaultSettingCell.xib; sourceTree = "<group>"; };
 		FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsDAO.h; path = Models/DAO/Orders/GoodsDAO.h; sourceTree = "<group>"; };
 		FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsDAO.m; path = Models/DAO/Orders/GoodsDAO.m; sourceTree = "<group>"; };
 		FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseOrderDAO.h; path = Models/DAO/Orders/BaseOrderDAO.h; sourceTree = "<group>"; };
@@ -296,6 +316,9 @@
 				FF2A16B41CD900730048D3BA /* SelectAddressViewController.h */,
 				FF2A16B51CD900730048D3BA /* SelectAddressViewController.m */,
 				FF2A16B61CD900730048D3BA /* SelectAddressViewController.xib */,
+				FF2A16CC1CDA4A020048D3BA /* EditAddressViewController.h */,
+				FF2A16CD1CDA4A020048D3BA /* EditAddressViewController.m */,
+				FF2A16CE1CDA4A020048D3BA /* EditAddressViewController.xib */,
 			);
 			name = AddressInfo;
 			sourceTree = "<group>";
@@ -311,6 +334,15 @@
 				FF2A16C11CD901BC0048D3BA /* NormalAddressCell.xib */,
 				FF2A16C41CD901DC0048D3BA /* BasicAddressCell.h */,
 				FF2A16C51CD901DC0048D3BA /* BasicAddressCell.m */,
+				FF2A16C71CDA44AE0048D3BA /* AddNewAddressFooterView.h */,
+				FF2A16C81CDA44AE0048D3BA /* AddNewAddressFooterView.m */,
+				FF2A16CA1CDA44C50048D3BA /* AddNewAddressFooterView.xib */,
+				FF2A16D11CDA4B1C0048D3BA /* UserMainInfoCell.h */,
+				FF2A16D21CDA4B1C0048D3BA /* UserMainInfoCell.m */,
+				FF2A16D31CDA4B1C0048D3BA /* UserMainInfoCell.xib */,
+				FF2A16D61CDA52FA0048D3BA /* DefaultSettingCell.h */,
+				FF2A16D71CDA52FA0048D3BA /* DefaultSettingCell.m */,
+				FF2A16D81CDA52FA0048D3BA /* DefaultSettingCell.xib */,
 			);
 			name = AddressInfo;
 			sourceTree = "<group>";
@@ -618,9 +650,13 @@
 				FF2A16A81CD7B0750048D3BA /* OrderFooterView.xib in Resources */,
 				FF2A16B81CD900730048D3BA /* SelectAddressViewController.xib in Resources */,
 				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
+				FF2A16D51CDA4B1C0048D3BA /* UserMainInfoCell.xib in Resources */,
+				FF2A16DA1CDA52FA0048D3BA /* DefaultSettingCell.xib in Resources */,
 				FF095CF91CC3BDB00035C619 /* AgentRegisterTableViewCell.xib in Resources */,
+				FF2A16CB1CDA44C50048D3BA /* AddNewAddressFooterView.xib in Resources */,
 				FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */,
 				FFBA5BFD1CC537D200B22580 /* SubOrdersTableViewCell.xib in Resources */,
+				FF2A16D01CDA4A020048D3BA /* EditAddressViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +721,9 @@
 				FF095CE81CC38A7C0035C619 /* BasicDAO.m in Sources */,
 				FFD30B1B1CBFED5B006DE031 /* PCNavigationViewController.m in Sources */,
 				FFBA5BF71CC537AD00B22580 /* MyOrdersTableViewCell.m in Sources */,
+				FF2A16D91CDA52FA0048D3BA /* DefaultSettingCell.m in Sources */,
 				FFFB4B711CBFFBBF00F09EAA /* ProductsListViewController.m in Sources */,
+				FF2A16C91CDA44AE0048D3BA /* AddNewAddressFooterView.m in Sources */,
 				FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */,
 				FF2A16AC1CD7B3380048D3BA /* TextWithEditCell.m in Sources */,
 				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
@@ -710,6 +748,7 @@
 				FFDD31231CCD0E7D00438DCC /* MainViewController.m in Sources */,
 				FF2A16941CD5026E0048D3BA /* GoodsPageViewController.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
+				FF2A16CF1CDA4A020048D3BA /* EditAddressViewController.m in Sources */,
 				FF2A16B71CD900730048D3BA /* SelectAddressViewController.m in Sources */,
 				FF2A16C21CD901BC0048D3BA /* NormalAddressCell.m in Sources */,
 				FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */,
@@ -722,6 +761,7 @@
 				FF095CDE1CC388120035C619 /* AgentInfoTableViewCell.m in Sources */,
 				FF2A16991CD50D4B0048D3BA /* GoodsInfoTableViewCell.m in Sources */,
 				FFBA5BF11CC5307600B22580 /* OrdersListViewController.m in Sources */,
+				FF2A16D41CDA4B1C0048D3BA /* UserMainInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
