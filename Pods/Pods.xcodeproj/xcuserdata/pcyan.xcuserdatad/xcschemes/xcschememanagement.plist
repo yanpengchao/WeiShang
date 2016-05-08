@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>APAddressBook.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DFCommon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -89,6 +94,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZLPeoplePickerViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -117,12 +127,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>44AA564FF64EB7AFDFC7F61589EA55F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>56708788CEEFF980D691A40031C4F150</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>721D314D080CA12512950C944F83F2D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>871737A65C664995FB48CDA571DFF8FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,6 +167,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A0BB5A8A24C73EC597E926A75843B1F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AD8A3C318140D6A3426A850429F23B9B</key>
 		<dict>
 			<key>primary</key>
@@ -158,11 +183,6 @@
 			<true/>
 		</dict>
 		<key>BB684B83ED80B0C25E0E3C918AC2EF31</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E383FE11EB6A4EA6E62787CC0B267BC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

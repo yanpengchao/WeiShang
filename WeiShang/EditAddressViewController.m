@@ -10,12 +10,20 @@
 #import "UserMainInfoCell.h"
 #import "TextWithEditCell.h"
 #import "DefaultSettingCell.h"
+#import "ZLPeoplePickerViewController.h"
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
 static NSString *TextWithEditCellIdentifier = @"TextWithEditCell";
 static NSString *UserMainInfoCellIdentifier = @"UserMainInfoCell";
 static NSString *DefaultSettingCellIdentifier = @"DefaultSettingCell";
 
-@interface EditAddressViewController ()
+@interface EditAddressViewController () <ZLPeoplePickerViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate, ABPersonViewControllerDelegate>
+
+@property (nonatomic, assign) ABAddressBookRef addressBookRef;
+@property (nonatomic, strong) ZLPeoplePickerViewController *peoplePicker;
+@property (nonatomic, strong) NSString* userName;
+@property (nonatomic, strong) NSString* phoneNumber;
 
 @end
 
@@ -79,6 +87,9 @@ static NSString *DefaultSettingCellIdentifier = @"DefaultSettingCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         UserMainInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:UserMainInfoCellIdentifier];
+        [cell.selectContractButton addTarget:self action:@selector(selectContractButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+        [cell.nameTextField setText:self.userName];
+        [cell.phoneNumberTextField setText:self.phoneNumber];
         return cell;
     }
     else if (indexPath.row == 1) {
@@ -150,14 +161,97 @@ static NSString *DefaultSettingCellIdentifier = @"DefaultSettingCell";
 }
 */
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark ABPersonViewControllerDelegate methods
+// Does not allow users to perform default actions such as dialing a phone
+// number, when they select a contact property.
+- (BOOL)personViewController:(ABPersonViewController *)personViewController
+shouldPerformDefaultActionForPerson:(ABRecordRef)person
+                    property:(ABPropertyID)property
+                  identifier:(ABMultiValueIdentifier)identifierForValue
+{
+    return NO;
 }
-*/
 
+#pragma mark - ZLPeoplePickerViewControllerDelegate
+- (void)peoplePickerViewController:(ZLPeoplePickerViewController *)peoplePicker
+                   didSelectPerson:(NSNumber *)recordId {
+    self.userName = [self nameForPerson:recordId];
+    self.phoneNumber = [self phoneNumberForPerson:recordId];
+    
+    [self.navigationController popToViewController:self animated:YES];
+    NSArray* array = @[[NSIndexPath indexPathForItem:0 inSection:0]];
+    [self.tableView reloadRowsAtIndexPaths:array withRowAnimation:UITableViewRowAnimationFade];
+}
+- (void)peoplePickerViewController:(ZLPeoplePickerViewController *)peoplePicker didReturnWithSelectedPeople:(NSArray *)people {
+    if (!people || people.count == 0) {
+        return;
+    }
+}
+- (void)newPersonViewControllerDidCompleteWithNewPerson:
+(nullable ABRecordRef)person {
+    //
+}
+
+#pragma mark - actions
+
+- (void)selectContractButtonClicked
+{
+    [self.navigationController pushViewController:self.peoplePicker
+                                         animated:YES];
+}
+
+#pragma mark - local functions
+
+- (NSString *)nameForPerson:(NSNumber *)recordId {
+    NSString *firstName = (__bridge_transfer NSString *)ABRecordCopyValue([self recordRefFromRecordId:recordId],
+                                                                          kABPersonFirstNameProperty);
+    NSString* lastName = (__bridge_transfer NSString *)ABRecordCopyValue([self recordRefFromRecordId:recordId],
+                                                                         kABPersonLastNameProperty);
+    return [NSString stringWithFormat:@"%@%@", lastName, firstName];
+}
+
+- (ABRecordRef)recordRefFromRecordId:(NSNumber *)recordId {
+    return ABAddressBookGetPersonWithRecordID(self.addressBookRef, [recordId intValue]);
+}
+
+- (NSString*)phoneNumberForPerson:(NSNumber*)recordId
+{
+    ABMultiValueRef phoneNumbers = ABRecordCopyValue([self recordRefFromRecordId:recordId],
+                                                     kABPersonPhoneProperty);
+    NSString* phoneNumber = nil;
+    if (ABMultiValueGetCount(phoneNumbers) > 0) {
+        phoneNumber = (__bridge_transfer NSString*)ABMultiValueCopyValueAtIndex(phoneNumbers, 0);
+    } else {
+        phoneNumber = @"";
+    }
+
+    
+    return phoneNumber;
+}
+
+#pragma mark - getter/setter
+
+- (ABAddressBookRef)addressBookRef
+{
+    if (_addressBookRef == nil) {
+        _addressBookRef = ABAddressBookCreateWithOptions(NULL, NULL);
+    }
+    
+    return _addressBookRef;
+}
+
+
+- (ZLPeoplePickerViewController*)peoplePicker
+{
+    if (_peoplePicker == nil) {
+        [ZLPeoplePickerViewController initializeAddressBook];
+        _peoplePicker = [[ZLPeoplePickerViewController alloc] init];
+        _peoplePicker.delegate = self;
+        _peoplePicker.fieldMask = ZLContactFieldAll;
+        _peoplePicker.numberOfSelectedPeople = ZLNumSelectionNone;
+        _peoplePicker.shouldHideUnmaskedContacts = NO;
+    }
+    
+    return _peoplePicker;
+}
 @end

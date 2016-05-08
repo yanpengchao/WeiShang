@@ -20,6 +20,9 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - APAddressBook (0.2.1):
+    - APAddressBook/Core (= 0.2.1)
+  - APAddressBook/Core (0.2.1)
   - DFCommon (1.3.9):
     - AFNetworking (~> 2.6.0)
     - FMDB (~> 2.5)
@@ -56,7 +59,7 @@ PODS:
   - MLLabel (1.9.1)
   - MMPopupView (1.7.2):
     - Masonry
-  - NinaPagerView (0.5.2)
+  - NinaPagerView (0.6)
   - ODRefreshControl (1.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
@@ -64,13 +67,17 @@ PODS:
   - SVProgressHUD (2.0.3)
   - TZImagePickerController (1.3.2)
   - YLGIFImage (0.11)
+  - ZLPeoplePickerViewController (0.2.0):
+    - APAddressBook (= 0.2.1)
 
 DEPENDENCIES:
   - DFTimelineView
   - NinaPagerView
+  - ZLPeoplePickerViewController
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  APAddressBook: 90c0fb07579a47e10ef1a2344e23cfd35f388bec
   DFCommon: 4ed8395c63a40852bd071d33cb4a298e86399b66
   DFTimelineView: 7af16c6a9148ff0ac9c968f36eb366007a99637b
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
@@ -80,11 +87,12 @@ SPEC CHECKSUMS:
   MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
   MLLabel: 086ecaa4101505c166950cff986a3edcbcfb1c27
   MMPopupView: fe1dd010824029dfb632fdf1a531db5dd5386020
-  NinaPagerView: 42f91d310bed2e4114dfd4c832fdb818488e542c
+  NinaPagerView: 3de3b9e29cdddd31692f198de02fc6c1dab9804f
   ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   TZImagePickerController: 9cfdcadbf05bfbcb3c47436d4117e5cb0fe7bacb
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
+  ZLPeoplePickerViewController: 0666f4153ba3086e462cfc8a73ad20cdf39da908
 
 COCOAPODS: 0.39.0
