@@ -62,6 +62,10 @@
 		FF2A16EF1CDF13040048D3BA /* WHUCalendarPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16E61CDF13040048D3BA /* WHUCalendarPopView.m */; };
 		FF2A16F01CDF13040048D3BA /* WHUCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16E81CDF13040048D3BA /* WHUCalendarView.m */; };
 		FF2A16F11CDF13040048D3BA /* WHUCalendarYMSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16EA1CDF13040048D3BA /* WHUCalendarYMSelectView.m */; };
+		FF2A16FB1CDF32F40048D3BA /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16F91CDF32F40048D3BA /* MineViewController.m */; };
+		FF2A16FC1CDF32F40048D3BA /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16FA1CDF32F40048D3BA /* MineViewController.xib */; };
+		FF2A17011CDF34780048D3BA /* MineInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16FF1CDF34780048D3BA /* MineInfoCell.m */; };
+		FF2A17021CDF34780048D3BA /* MineInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A17001CDF34780048D3BA /* MineInfoCell.xib */; };
 		FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */; };
 		FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */; };
 		FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */; };
@@ -186,6 +190,12 @@
 		FF2A16E81CDF13040048D3BA /* WHUCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WHUCalendarView.m; path = ThirdParts/WHUCalendar/WHUCalendarView.m; sourceTree = "<group>"; };
 		FF2A16E91CDF13040048D3BA /* WHUCalendarYMSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WHUCalendarYMSelectView.h; path = ThirdParts/WHUCalendar/WHUCalendarYMSelectView.h; sourceTree = "<group>"; };
 		FF2A16EA1CDF13040048D3BA /* WHUCalendarYMSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WHUCalendarYMSelectView.m; path = ThirdParts/WHUCalendar/WHUCalendarYMSelectView.m; sourceTree = "<group>"; };
+		FF2A16F81CDF32F40048D3BA /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineViewController.h; path = Controllers/Mine/MineViewController.h; sourceTree = "<group>"; };
+		FF2A16F91CDF32F40048D3BA /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineViewController.m; path = Controllers/Mine/MineViewController.m; sourceTree = "<group>"; };
+		FF2A16FA1CDF32F40048D3BA /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MineViewController.xib; path = Controllers/Mine/MineViewController.xib; sourceTree = "<group>"; };
+		FF2A16FE1CDF34780048D3BA /* MineInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineInfoCell.h; path = Views/Mine/MineInfoCell.h; sourceTree = "<group>"; };
+		FF2A16FF1CDF34780048D3BA /* MineInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineInfoCell.m; path = Views/Mine/MineInfoCell.m; sourceTree = "<group>"; };
+		FF2A17001CDF34780048D3BA /* MineInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MineInfoCell.xib; path = Views/Mine/MineInfoCell.xib; sourceTree = "<group>"; };
 		FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsDAO.h; path = Models/DAO/Orders/GoodsDAO.h; sourceTree = "<group>"; };
 		FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsDAO.m; path = Models/DAO/Orders/GoodsDAO.m; sourceTree = "<group>"; };
 		FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseOrderDAO.h; path = Models/DAO/Orders/BaseOrderDAO.h; sourceTree = "<group>"; };
@@ -391,6 +401,26 @@
 			name = WHUCalendar;
 			sourceTree = "<group>";
 		};
+		FF2A16F21CDF32820048D3BA /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A16F81CDF32F40048D3BA /* MineViewController.h */,
+				FF2A16F91CDF32F40048D3BA /* MineViewController.m */,
+				FF2A16FA1CDF32F40048D3BA /* MineViewController.xib */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		FF2A16FD1CDF34360048D3BA /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A16FE1CDF34780048D3BA /* MineInfoCell.h */,
+				FF2A16FF1CDF34780048D3BA /* MineInfoCell.m */,
+				FF2A17001CDF34780048D3BA /* MineInfoCell.xib */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
 		FFB6890C1CC68DA1008EF0D2 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,6 +534,7 @@
 				FF2A16831CD4C8F50048D3BA /* Products */,
 				FF095CDA1CC387BF0035C619 /* AgentAuth */,
 				FFBA5BF31CC5376400B22580 /* Orders */,
+				FF2A16FD1CDF34360048D3BA /* Mine */,
 				FFD30B1D1CBFED78006DE031 /* Common */,
 			);
 			name = Views;
@@ -516,6 +547,7 @@
 				FFFB4B601CBFF9A700F09EAA /* Products */,
 				FF095CD91CC387870035C619 /* AgentAuth */,
 				FFBA5BE81CC52FA100B22580 /* Orders */,
+				FF2A16F21CDF32820048D3BA /* Mine */,
 				FFD30B121CBFED33006DE031 /* Common */,
 			);
 			name = Controllers;
@@ -678,6 +710,7 @@
 				FFDD31451CCD23EF00438DCC /* PageViewController.xib in Resources */,
 				FF2A16951CD5026E0048D3BA /* GoodsPageViewController.xib in Resources */,
 				FFBA5BF21CC5307600B22580 /* OrdersListViewController.xib in Resources */,
+				FF2A16FC1CDF32F40048D3BA /* MineViewController.xib in Resources */,
 				FFDD31241CCD0E7D00438DCC /* MainViewController.xib in Resources */,
 				FF2A16901CD501B20048D3BA /* GoodsListViewController.xib in Resources */,
 				FF2A168B1CD4F0570048D3BA /* OrderHeaderView.xib in Resources */,
@@ -697,6 +730,7 @@
 				FFFB4B5F1CBFF51300F09EAA /* WebViewController.xib in Resources */,
 				FF2A16D51CDA4B1C0048D3BA /* UserMainInfoCell.xib in Resources */,
 				FF2A16DA1CDA52FA0048D3BA /* DefaultSettingCell.xib in Resources */,
+				FF2A17021CDF34780048D3BA /* MineInfoCell.xib in Resources */,
 				FF095CF91CC3BDB00035C619 /* AgentRegisterTableViewCell.xib in Resources */,
 				FF2A16CB1CDA44C50048D3BA /* AddNewAddressFooterView.xib in Resources */,
 				FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */,
@@ -774,6 +808,7 @@
 				FF2A16EF1CDF13040048D3BA /* WHUCalendarPopView.m in Sources */,
 				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
 				FFDD31441CCD23EF00438DCC /* PageViewController.m in Sources */,
+				FF2A17011CDF34780048D3BA /* MineInfoCell.m in Sources */,
 				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
 				FF2A16B01CD7BC120048D3BA /* EditOrderFooterView.m in Sources */,
 				FF2A16891CD4F0440048D3BA /* OrderHeaderView.m in Sources */,
@@ -787,6 +822,7 @@
 				FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */,
 				FF095CEF1CC38E610035C619 /* AgentRegisterInfoDAO.m in Sources */,
 				FF095CF31CC393E10035C619 /* AgentRegisterViewController.m in Sources */,
+				FF2A16FB1CDF32F40048D3BA /* MineViewController.m in Sources */,
 				FF2A168F1CD501B20048D3BA /* GoodsListViewController.m in Sources */,
 				FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,

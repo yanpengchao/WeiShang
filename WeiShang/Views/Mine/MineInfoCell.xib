@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MineInfoCell" rowHeight="56" id="KGk-i7-Jjw" customClass="MineInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PE2-F6-Tmi">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Xk6-Qf-ILw"/>
+                            <constraint firstAttribute="width" constant="40" id="brO-pZ-lH6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名（微信名）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTl-ab-wDl">
+                        <rect key="frame" x="56" y="6" width="256" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="kTE-uW-BTO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等级（钻石）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEH-rQ-i3c">
+                        <rect key="frame" x="56" y="27" width="256" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="PE2-F6-Tmi" secondAttribute="leading" id="Erg-fd-nTH"/>
+                    <constraint firstItem="hEH-rQ-i3c" firstAttribute="height" secondItem="FTl-ab-wDl" secondAttribute="height" id="Jnt-wH-e5k"/>
+                    <constraint firstAttribute="topMargin" secondItem="PE2-F6-Tmi" secondAttribute="top" id="OV0-rD-i5k"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hEH-rQ-i3c" secondAttribute="bottom" constant="-1" id="UFE-7Y-abj"/>
+                    <constraint firstItem="FTl-ab-wDl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="ekS-LB-O0r"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FTl-ab-wDl" secondAttribute="trailing" id="ffM-he-RhQ"/>
+                    <constraint firstItem="hEH-rQ-i3c" firstAttribute="leading" secondItem="FTl-ab-wDl" secondAttribute="leading" id="gwg-4G-nDg"/>
+                    <constraint firstItem="FTl-ab-wDl" firstAttribute="leading" secondItem="PE2-F6-Tmi" secondAttribute="trailing" constant="8" id="qpb-ct-lfu"/>
+                    <constraint firstItem="hEH-rQ-i3c" firstAttribute="width" secondItem="FTl-ab-wDl" secondAttribute="width" id="uqz-Zl-MSV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mineAvatarImageView" destination="PE2-F6-Tmi" id="x2V-v5-Vwx"/>
+                <outlet property="mineLevelLabel" destination="hEH-rQ-i3c" id="TQf-G6-Asm"/>
+                <outlet property="mineNameLabel" destination="FTl-ab-wDl" id="c2S-se-P1y"/>
+            </connections>
+            <point key="canvasLocation" x="654" y="404"/>
+        </tableViewCell>
+    </objects>
+</document>

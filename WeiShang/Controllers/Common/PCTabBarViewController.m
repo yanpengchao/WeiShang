@@ -14,7 +14,7 @@
 #import "ProductsListViewController.h"
 #import "AgentsListViewController.h"
 #import "OrdersListViewController.h"
-#import "ViewController.h"
+#import "MineViewController.h"
 
 @interface PCTabBarViewController ()
 
@@ -78,7 +78,7 @@
     [self navigationVCComPare:nav3 SetTitle:titleArray[3] image:imageArray[3] selImage:seletedImageArray[3]];
     
     // 我的
-    UIViewController *vc4 = [[UIViewController alloc] init];
+    MineViewController *vc4 = [[MineViewController alloc] init];
     PCNavigationViewController *nav4 = [[PCNavigationViewController alloc]initWithRootViewController:vc4];
     [self navigationVCComPare:nav4 SetTitle:titleArray[4] image:imageArray[4] selImage:seletedImageArray[4]];
     
