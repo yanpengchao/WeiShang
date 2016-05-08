@@ -16,6 +16,7 @@
 #import "TextWithEditCell.h"
 #import "EditOrderFooterView.h"
 #import "SelectAddressViewController.h"
+#import "WHUCalendarPopView.h"
 
 static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
 //static NSString *TextWithEditCellIdentifier = @"TextWithEditCell";
@@ -27,6 +28,8 @@ static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
  */
 @property (nonatomic, strong)MyOrderDAO* order;
 @property (nonatomic, strong)NSArray* registerCellArray;
+
+@property (nonatomic, strong)WHUCalendarPopView* canlendarView;
 
 @end
 
@@ -221,6 +224,18 @@ static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
             SelectAddressViewController* saVC = [[SelectAddressViewController alloc] init];
             [self.navigationController pushViewController:saVC animated:YES];
         }
+        else if (indexPath.section == 2) {
+            switch (indexPath.row) {
+                case 1:
+                {
+                    [self.canlendarView show];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        }
     }
     else
     {
@@ -309,7 +324,7 @@ static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
                 UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"contactInfoCell"];
                 cell.textLabel.text = registerInfoArray[i];
                 cell.detailTextLabel.text = [NSString stringWithFormat:@"%@信息", registerInfoArray[i]];
-                
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 [mArray addObject:cell];
             }
                 break;
@@ -343,6 +358,26 @@ static NSString *MyOrderCellTableIdentifier = @"MyOrdersTableViewCell";
     EditOrderFooterView* footerView = [EditOrderFooterView createView];
     [footerView.commitButton addTarget:self action:@selector(commitButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     self.tableView.tableFooterView = footerView;
+}
+
+- (WHUCalendarPopView*)canlendarView
+{
+    if (_canlendarView == nil) {
+        _canlendarView = [[WHUCalendarPopView alloc] init];
+        __block UITableViewCell* cell = self.registerCellArray[1];
+        _canlendarView.onDateSelectBlk = ^(NSDate* date){
+            static NSDateFormatter *format = nil;
+            if (format == nil) {
+                format = [[NSDateFormatter alloc] init];
+                [format setDateFormat:@"yyyy年MM月dd"];
+            }
+            
+            NSString *dateString = [format stringFromDate:date];
+            cell.detailTextLabel.text = dateString;
+        };
+    }
+    
+    return _canlendarView;
 }
 
 @end
