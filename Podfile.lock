@@ -23,6 +23,14 @@ PODS:
   - APAddressBook (0.2.1):
     - APAddressBook/Core (= 0.2.1)
   - APAddressBook/Core (0.2.1)
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
   - DFCommon (1.3.9):
     - AFNetworking (~> 2.6.0)
     - FMDB (~> 2.5)
@@ -71,6 +79,7 @@ PODS:
     - APAddressBook (= 0.2.1)
 
 DEPENDENCIES:
+  - CocoaLumberjack
   - DFTimelineView
   - NinaPagerView
   - ZLPeoplePickerViewController
@@ -78,6 +87,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   APAddressBook: 90c0fb07579a47e10ef1a2344e23cfd35f388bec
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   DFCommon: 4ed8395c63a40852bd071d33cb4a298e86399b66
   DFTimelineView: 7af16c6a9148ff0ac9c968f36eb366007a99637b
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a

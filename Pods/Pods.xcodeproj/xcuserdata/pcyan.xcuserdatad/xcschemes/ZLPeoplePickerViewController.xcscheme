@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '15D1F64B067D3F53F8C0B4AC'
+               BlueprintIdentifier = '077CE23C6BD0307612C39459'
                BlueprintName = 'ZLPeoplePickerViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libZLPeoplePickerViewController.a'>

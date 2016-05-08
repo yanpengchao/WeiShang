@@ -13,5 +13,12 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CocoaLumberjack.h"
+
+extern const DDLogLevel ddLogLevel;
+//#define BUILD_FOR_DEV
+//#define BUILD_FOR_QA
+//#define BUILD_FOR_STAGE
+#define BUILD_FOR_PRODUCT
 
 #endif /* WeiShang_Prefix_pch */

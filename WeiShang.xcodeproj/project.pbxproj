@@ -66,6 +66,25 @@
 		FF2A16FC1CDF32F40048D3BA /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A16FA1CDF32F40048D3BA /* MineViewController.xib */; };
 		FF2A17011CDF34780048D3BA /* MineInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A16FF1CDF34780048D3BA /* MineInfoCell.m */; };
 		FF2A17021CDF34780048D3BA /* MineInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2A17001CDF34780048D3BA /* MineInfoCell.xib */; };
+		FF2A17061CDF40940048D3BA /* NSObject+Representation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17051CDF40940048D3BA /* NSObject+Representation.m */; };
+		FF2A170A1CDF5C9F0048D3BA /* PromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17091CDF5C9F0048D3BA /* PromptView.m */; };
+		FF2A170C1CDF5FD30048D3BA /* interfaceUri.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2A170B1CDF5FD30048D3BA /* interfaceUri.plist */; };
+		FF2A17201CDF60CA0048D3BA /* DYInterfaceRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A170D1CDF60CA0048D3BA /* DYInterfaceRequestHelper.m */; };
+		FF2A17211CDF60CA0048D3BA /* DYInterfaceRequesterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17101CDF60CA0048D3BA /* DYInterfaceRequesterBase.m */; };
+		FF2A17221CDF60CA0048D3BA /* DYHttpRequestWithCacheOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17121CDF60CA0048D3BA /* DYHttpRequestWithCacheOperationManager.m */; };
+		FF2A17231CDF60CA0048D3BA /* DYErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17151CDF60CA0048D3BA /* DYErrorHelper.m */; };
+		FF2A17241CDF60CA0048D3BA /* DYInterfaceReqeustItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17181CDF60CA0048D3BA /* DYInterfaceReqeustItem.m */; };
+		FF2A17251CDF60CA0048D3BA /* DYAppModuleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A171B1CDF60CA0048D3BA /* DYAppModuleItem.m */; };
+		FF2A17261CDF60CA0048D3BA /* DYInterfacePropertiesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A171C1CDF60CA0048D3BA /* DYInterfacePropertiesManager.m */; };
+		FF2A17271CDF60CA0048D3BA /* DYNetStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A171E1CDF60CA0048D3BA /* DYNetStatusManager.m */; };
+		FF2A17281CDF60CA0048D3BA /* DYInterfaceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A171F1CDF60CA0048D3BA /* DYInterfaceInfo.m */; };
+		FF2A172B1CDF62240048D3BA /* DYJsonRequestWithJsonResponseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17291CDF62240048D3BA /* DYJsonRequestWithJsonResponseRequest.m */; };
+		FF2A172E1CDF6F8E0048D3BA /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A172D1CDF6F8E0048D3BA /* NSString+URL.m */; };
+		FF2A17311CDF7B220048D3BA /* DYDataSourceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17301CDF7B220048D3BA /* DYDataSourceBase.m */; };
+		FF2A17341CDF7EA00048D3BA /* MineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17331CDF7EA00048D3BA /* MineDataSource.m */; };
+		FF2A17371CDF7EF90048D3BA /* ProductsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17361CDF7EF90048D3BA /* ProductsDataSource.m */; };
+		FF2A173A1CDF7F130048D3BA /* AgentDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A17391CDF7F130048D3BA /* AgentDataSource.m */; };
+		FF2A173D1CDF7F440048D3BA /* OrdersDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2A173C1CDF7F440048D3BA /* OrdersDataSource.m */; };
 		FF5D9E151CC7DAAB008A757C /* GoodsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */; };
 		FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5D9E171CC7DBF6008A757C /* BaseOrderDAO.m */; };
 		FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB6890E1CC68DDC008EF0D2 /* MyOrderDAO.m */; };
@@ -196,6 +215,44 @@
 		FF2A16FE1CDF34780048D3BA /* MineInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineInfoCell.h; path = Views/Mine/MineInfoCell.h; sourceTree = "<group>"; };
 		FF2A16FF1CDF34780048D3BA /* MineInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineInfoCell.m; path = Views/Mine/MineInfoCell.m; sourceTree = "<group>"; };
 		FF2A17001CDF34780048D3BA /* MineInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MineInfoCell.xib; path = Views/Mine/MineInfoCell.xib; sourceTree = "<group>"; };
+		FF2A17041CDF40940048D3BA /* NSObject+Representation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Representation.h"; path = "NetWork/NSObject+Representation.h"; sourceTree = "<group>"; };
+		FF2A17051CDF40940048D3BA /* NSObject+Representation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Representation.m"; path = "NetWork/NSObject+Representation.m"; sourceTree = "<group>"; };
+		FF2A17081CDF5C9F0048D3BA /* PromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PromptView.h; path = Views/Common/PromptView.h; sourceTree = "<group>"; };
+		FF2A17091CDF5C9F0048D3BA /* PromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PromptView.m; path = Views/Common/PromptView.m; sourceTree = "<group>"; };
+		FF2A170B1CDF5FD30048D3BA /* interfaceUri.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = interfaceUri.plist; path = Configs/interfaceUri.plist; sourceTree = "<group>"; };
+		FF2A170D1CDF60CA0048D3BA /* DYInterfaceRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYInterfaceRequestHelper.m; path = NetWork/DYInterfaceRequestHelper.m; sourceTree = "<group>"; };
+		FF2A170E1CDF60CA0048D3BA /* DYInterfaceIdDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYInterfaceIdDef.h; path = NetWork/DYInterfaceIdDef.h; sourceTree = "<group>"; };
+		FF2A170F1CDF60CA0048D3BA /* DYInterfaceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYInterfaceInfo.h; path = NetWork/DYInterfaceInfo.h; sourceTree = "<group>"; };
+		FF2A17101CDF60CA0048D3BA /* DYInterfaceRequesterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYInterfaceRequesterBase.m; path = NetWork/DYInterfaceRequesterBase.m; sourceTree = "<group>"; };
+		FF2A17111CDF60CA0048D3BA /* DYHttpRequestWithCacheOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYHttpRequestWithCacheOperationManager.h; path = NetWork/DYHttpRequestWithCacheOperationManager.h; sourceTree = "<group>"; };
+		FF2A17121CDF60CA0048D3BA /* DYHttpRequestWithCacheOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYHttpRequestWithCacheOperationManager.m; path = NetWork/DYHttpRequestWithCacheOperationManager.m; sourceTree = "<group>"; };
+		FF2A17131CDF60CA0048D3BA /* DYInterfaceRequesterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYInterfaceRequesterBase.h; path = NetWork/DYInterfaceRequesterBase.h; sourceTree = "<group>"; };
+		FF2A17141CDF60CA0048D3BA /* DYInterfaceRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYInterfaceRequestHelper.h; path = NetWork/DYInterfaceRequestHelper.h; sourceTree = "<group>"; };
+		FF2A17151CDF60CA0048D3BA /* DYErrorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYErrorHelper.m; path = NetWork/DYErrorHelper.m; sourceTree = "<group>"; };
+		FF2A17161CDF60CA0048D3BA /* DYInterfacePropertiesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYInterfacePropertiesManager.h; path = NetWork/DYInterfacePropertiesManager.h; sourceTree = "<group>"; };
+		FF2A17171CDF60CA0048D3BA /* DYInterfaceReqeustItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYInterfaceReqeustItem.h; path = NetWork/DYInterfaceReqeustItem.h; sourceTree = "<group>"; };
+		FF2A17181CDF60CA0048D3BA /* DYInterfaceReqeustItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYInterfaceReqeustItem.m; path = NetWork/DYInterfaceReqeustItem.m; sourceTree = "<group>"; };
+		FF2A17191CDF60CA0048D3BA /* DYErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYErrorHelper.h; path = NetWork/DYErrorHelper.h; sourceTree = "<group>"; };
+		FF2A171A1CDF60CA0048D3BA /* DYAppModuleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYAppModuleItem.h; path = NetWork/DYAppModuleItem.h; sourceTree = "<group>"; };
+		FF2A171B1CDF60CA0048D3BA /* DYAppModuleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYAppModuleItem.m; path = NetWork/DYAppModuleItem.m; sourceTree = "<group>"; };
+		FF2A171C1CDF60CA0048D3BA /* DYInterfacePropertiesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYInterfacePropertiesManager.m; path = NetWork/DYInterfacePropertiesManager.m; sourceTree = "<group>"; };
+		FF2A171D1CDF60CA0048D3BA /* DYNetStatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYNetStatusManager.h; path = NetWork/DYNetStatusManager.h; sourceTree = "<group>"; };
+		FF2A171E1CDF60CA0048D3BA /* DYNetStatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYNetStatusManager.m; path = NetWork/DYNetStatusManager.m; sourceTree = "<group>"; };
+		FF2A171F1CDF60CA0048D3BA /* DYInterfaceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYInterfaceInfo.m; path = NetWork/DYInterfaceInfo.m; sourceTree = "<group>"; };
+		FF2A17291CDF62240048D3BA /* DYJsonRequestWithJsonResponseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYJsonRequestWithJsonResponseRequest.m; path = NetWork/DYJsonRequestWithJsonResponseRequest.m; sourceTree = "<group>"; };
+		FF2A172A1CDF62240048D3BA /* DYJsonRequestWithJsonResponseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYJsonRequestWithJsonResponseRequest.h; path = NetWork/DYJsonRequestWithJsonResponseRequest.h; sourceTree = "<group>"; };
+		FF2A172C1CDF6F8E0048D3BA /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URL.h"; path = "NetWork/NSString+URL.h"; sourceTree = "<group>"; };
+		FF2A172D1CDF6F8E0048D3BA /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URL.m"; path = "NetWork/NSString+URL.m"; sourceTree = "<group>"; };
+		FF2A172F1CDF7B220048D3BA /* DYDataSourceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYDataSourceBase.h; path = NetWork/DYDataSourceBase.h; sourceTree = "<group>"; };
+		FF2A17301CDF7B220048D3BA /* DYDataSourceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYDataSourceBase.m; path = NetWork/DYDataSourceBase.m; sourceTree = "<group>"; };
+		FF2A17321CDF7EA00048D3BA /* MineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineDataSource.h; path = Models/DataSource/MineDataSource.h; sourceTree = "<group>"; };
+		FF2A17331CDF7EA00048D3BA /* MineDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineDataSource.m; path = Models/DataSource/MineDataSource.m; sourceTree = "<group>"; };
+		FF2A17351CDF7EF90048D3BA /* ProductsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductsDataSource.h; path = Models/DataSource/ProductsDataSource.h; sourceTree = "<group>"; };
+		FF2A17361CDF7EF90048D3BA /* ProductsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductsDataSource.m; path = Models/DataSource/ProductsDataSource.m; sourceTree = "<group>"; };
+		FF2A17381CDF7F130048D3BA /* AgentDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgentDataSource.h; path = Models/DataSource/AgentDataSource.h; sourceTree = "<group>"; };
+		FF2A17391CDF7F130048D3BA /* AgentDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgentDataSource.m; path = Models/DataSource/AgentDataSource.m; sourceTree = "<group>"; };
+		FF2A173B1CDF7F440048D3BA /* OrdersDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrdersDataSource.h; path = Models/DataSource/OrdersDataSource.h; sourceTree = "<group>"; };
+		FF2A173C1CDF7F440048D3BA /* OrdersDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrdersDataSource.m; path = Models/DataSource/OrdersDataSource.m; sourceTree = "<group>"; };
 		FF5D9E131CC7DAAB008A757C /* GoodsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodsDAO.h; path = Models/DAO/Orders/GoodsDAO.h; sourceTree = "<group>"; };
 		FF5D9E141CC7DAAB008A757C /* GoodsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodsDAO.m; path = Models/DAO/Orders/GoodsDAO.m; sourceTree = "<group>"; };
 		FF5D9E161CC7DBF6008A757C /* BaseOrderDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseOrderDAO.h; path = Models/DAO/Orders/BaseOrderDAO.h; sourceTree = "<group>"; };
@@ -421,6 +478,48 @@
 			name = Mine;
 			sourceTree = "<group>";
 		};
+		FF2A17031CDF3D130048D3BA /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A172F1CDF7B220048D3BA /* DYDataSourceBase.h */,
+				FF2A17301CDF7B220048D3BA /* DYDataSourceBase.m */,
+				FF2A171A1CDF60CA0048D3BA /* DYAppModuleItem.h */,
+				FF2A171B1CDF60CA0048D3BA /* DYAppModuleItem.m */,
+				FF2A17191CDF60CA0048D3BA /* DYErrorHelper.h */,
+				FF2A17151CDF60CA0048D3BA /* DYErrorHelper.m */,
+				FF2A17111CDF60CA0048D3BA /* DYHttpRequestWithCacheOperationManager.h */,
+				FF2A17121CDF60CA0048D3BA /* DYHttpRequestWithCacheOperationManager.m */,
+				FF2A170E1CDF60CA0048D3BA /* DYInterfaceIdDef.h */,
+				FF2A170F1CDF60CA0048D3BA /* DYInterfaceInfo.h */,
+				FF2A171F1CDF60CA0048D3BA /* DYInterfaceInfo.m */,
+				FF2A17161CDF60CA0048D3BA /* DYInterfacePropertiesManager.h */,
+				FF2A171C1CDF60CA0048D3BA /* DYInterfacePropertiesManager.m */,
+				FF2A17171CDF60CA0048D3BA /* DYInterfaceReqeustItem.h */,
+				FF2A17181CDF60CA0048D3BA /* DYInterfaceReqeustItem.m */,
+				FF2A17131CDF60CA0048D3BA /* DYInterfaceRequesterBase.h */,
+				FF2A17101CDF60CA0048D3BA /* DYInterfaceRequesterBase.m */,
+				FF2A17141CDF60CA0048D3BA /* DYInterfaceRequestHelper.h */,
+				FF2A170D1CDF60CA0048D3BA /* DYInterfaceRequestHelper.m */,
+				FF2A172A1CDF62240048D3BA /* DYJsonRequestWithJsonResponseRequest.h */,
+				FF2A17291CDF62240048D3BA /* DYJsonRequestWithJsonResponseRequest.m */,
+				FF2A171D1CDF60CA0048D3BA /* DYNetStatusManager.h */,
+				FF2A171E1CDF60CA0048D3BA /* DYNetStatusManager.m */,
+				FF2A17041CDF40940048D3BA /* NSObject+Representation.h */,
+				FF2A17051CDF40940048D3BA /* NSObject+Representation.m */,
+				FF2A172C1CDF6F8E0048D3BA /* NSString+URL.h */,
+				FF2A172D1CDF6F8E0048D3BA /* NSString+URL.m */,
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		FF2A17071CDF40AD0048D3BA /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A170B1CDF5FD30048D3BA /* interfaceUri.plist */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
 		FFB6890C1CC68DA1008EF0D2 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +605,8 @@
 		FFD30AF71CBFEB59006DE031 /* WeiShang */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A17071CDF40AD0048D3BA /* Configs */,
+				FF2A17031CDF3D130048D3BA /* NetWork */,
 				FFFB4B731CBFFC0F00F09EAA /* ThirdParts */,
 				FFD30B111CBFED0D006DE031 /* Models */,
 				FFD30B101CBFECFC006DE031 /* Controllers */,
@@ -585,6 +686,8 @@
 		FFD30B1D1CBFED78006DE031 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A17081CDF5C9F0048D3BA /* PromptView.h */,
+				FF2A17091CDF5C9F0048D3BA /* PromptView.m */,
 				FF2A169C1CD734090048D3BA /* CKCalendarView.h */,
 				FF2A169D1CD734090048D3BA /* CKCalendarView.m */,
 				FFD30B1E1CBFED98006DE031 /* UIImage+Creation.m */,
@@ -603,6 +706,14 @@
 		FFFB4B541CBFF10600F09EAA /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				FF2A17321CDF7EA00048D3BA /* MineDataSource.h */,
+				FF2A17331CDF7EA00048D3BA /* MineDataSource.m */,
+				FF2A17351CDF7EF90048D3BA /* ProductsDataSource.h */,
+				FF2A17361CDF7EF90048D3BA /* ProductsDataSource.m */,
+				FF2A17381CDF7F130048D3BA /* AgentDataSource.h */,
+				FF2A17391CDF7F130048D3BA /* AgentDataSource.m */,
+				FF2A173B1CDF7F440048D3BA /* OrdersDataSource.h */,
+				FF2A173C1CDF7F440048D3BA /* OrdersDataSource.m */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -735,6 +846,7 @@
 				FF2A16CB1CDA44C50048D3BA /* AddNewAddressFooterView.xib in Resources */,
 				FF095CDF1CC388120035C619 /* AgentInfoTableViewCell.xib in Resources */,
 				FFBA5BFD1CC537D200B22580 /* SubOrdersTableViewCell.xib in Resources */,
+				FF2A170C1CDF5FD30048D3BA /* interfaceUri.plist in Resources */,
 				FF2A16D01CDA4A020048D3BA /* EditAddressViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -803,34 +915,49 @@
 				FF2A16D91CDA52FA0048D3BA /* DefaultSettingCell.m in Sources */,
 				FFFB4B711CBFFBBF00F09EAA /* ProductsListViewController.m in Sources */,
 				FF2A16C91CDA44AE0048D3BA /* AddNewAddressFooterView.m in Sources */,
+				FF2A17261CDF60CA0048D3BA /* DYInterfacePropertiesManager.m in Sources */,
 				FFFB4B681CBFFA5E00F09EAA /* BasicViewController.m in Sources */,
+				FF2A17211CDF60CA0048D3BA /* DYInterfaceRequesterBase.m in Sources */,
 				FF2A16AC1CD7B3380048D3BA /* TextWithEditCell.m in Sources */,
+				FF2A17061CDF40940048D3BA /* NSObject+Representation.m in Sources */,
 				FF2A16EF1CDF13040048D3BA /* WHUCalendarPopView.m in Sources */,
+				FF2A17201CDF60CA0048D3BA /* DYInterfaceRequestHelper.m in Sources */,
 				FFFB4B641CBFFA3300F09EAA /* BasicTableViewController.m in Sources */,
 				FFDD31441CCD23EF00438DCC /* PageViewController.m in Sources */,
 				FF2A17011CDF34780048D3BA /* MineInfoCell.m in Sources */,
 				FFFB4B5E1CBFF51300F09EAA /* WebViewController.m in Sources */,
 				FF2A16B01CD7BC120048D3BA /* EditOrderFooterView.m in Sources */,
 				FF2A16891CD4F0440048D3BA /* OrderHeaderView.m in Sources */,
+				FF2A17371CDF7EF90048D3BA /* ProductsDataSource.m in Sources */,
+				FF2A17341CDF7EA00048D3BA /* MineDataSource.m in Sources */,
+				FF2A172E1CDF6F8E0048D3BA /* NSString+URL.m in Sources */,
+				FF2A17271CDF60CA0048D3BA /* DYNetStatusManager.m in Sources */,
 				FF095CEB1CC38AE10035C619 /* AgentInfoDAO.m in Sources */,
 				FF2A16A61CD7B0640048D3BA /* OrderFooterView.m in Sources */,
 				FF2A16F01CDF13040048D3BA /* WHUCalendarView.m in Sources */,
 				FF2A16EE1CDF13040048D3BA /* WHUCalendarItem.m in Sources */,
 				FFD30AFA1CBFEB59006DE031 /* main.m in Sources */,
 				FFFB4B591CBFF1BA00F09EAA /* MainPageViewController.m in Sources */,
+				FF2A17311CDF7B220048D3BA /* DYDataSourceBase.m in Sources */,
 				FF2A16BD1CD9018A0048D3BA /* DefaultAddressCell.m in Sources */,
 				FF095CD21CC1F7FA0035C619 /* UserViewController.m in Sources */,
+				FF2A17221CDF60CA0048D3BA /* DYHttpRequestWithCacheOperationManager.m in Sources */,
 				FF095CEF1CC38E610035C619 /* AgentRegisterInfoDAO.m in Sources */,
+				FF2A17251CDF60CA0048D3BA /* DYAppModuleItem.m in Sources */,
 				FF095CF31CC393E10035C619 /* AgentRegisterViewController.m in Sources */,
 				FF2A16FB1CDF32F40048D3BA /* MineViewController.m in Sources */,
 				FF2A168F1CD501B20048D3BA /* GoodsListViewController.m in Sources */,
 				FFBA5BFC1CC537D200B22580 /* SubOrdersTableViewCell.m in Sources */,
+				FF2A17281CDF60CA0048D3BA /* DYInterfaceInfo.m in Sources */,
 				FFD30B1A1CBFED5B006DE031 /* PCTabBarViewController.m in Sources */,
 				FF2A16C61CD901DC0048D3BA /* BasicAddressCell.m in Sources */,
+				FF2A173A1CDF7F130048D3BA /* AgentDataSource.m in Sources */,
 				FF2A16A21CD7A9280048D3BA /* EditOrderViewController.m in Sources */,
 				FF095CF81CC3BDB00035C619 /* AgentRegisterTableViewCell.m in Sources */,
 				FFDD31231CCD0E7D00438DCC /* MainViewController.m in Sources */,
+				FF2A17241CDF60CA0048D3BA /* DYInterfaceReqeustItem.m in Sources */,
 				FF2A16941CD5026E0048D3BA /* GoodsPageViewController.m in Sources */,
+				FF2A17231CDF60CA0048D3BA /* DYErrorHelper.m in Sources */,
 				FFD30B1C1CBFED5B006DE031 /* ViewController.m in Sources */,
 				FF2A16CF1CDA4A020048D3BA /* EditAddressViewController.m in Sources */,
 				FF2A16B71CD900730048D3BA /* SelectAddressViewController.m in Sources */,
@@ -840,16 +967,19 @@
 				FF095D0A1CC3E0090035C619 /* DYAuthorizationStatus.m in Sources */,
 				FFB6890F1CC68DDC008EF0D2 /* MyOrderDAO.m in Sources */,
 				FF5D9E181CC7DBF6008A757C /* BaseOrderDAO.m in Sources */,
+				FF2A173D1CDF7F440048D3BA /* OrdersDataSource.m in Sources */,
 				FF2A16EC1CDF13040048D3BA /* WHUCalendarCell.m in Sources */,
 				FF095CD71CC387730035C619 /* AgentsListViewController.m in Sources */,
 				FF2A16EB1CDF13040048D3BA /* WHUCalendarCal.m in Sources */,
 				FF2A169E1CD734090048D3BA /* CKCalendarView.m in Sources */,
 				FF2A16ED1CDF13040048D3BA /* WHUCalendarFlowLayout.m in Sources */,
+				FF2A170A1CDF5C9F0048D3BA /* PromptView.m in Sources */,
 				FF095D051CC3D6920035C619 /* AgentRegisterFooterTableViewCell.m in Sources */,
 				FF095CDE1CC388120035C619 /* AgentInfoTableViewCell.m in Sources */,
 				FF2A16991CD50D4B0048D3BA /* GoodsInfoTableViewCell.m in Sources */,
 				FFBA5BF11CC5307600B22580 /* OrdersListViewController.m in Sources */,
 				FF2A16D41CDA4B1C0048D3BA /* UserMainInfoCell.m in Sources */,
+				FF2A172B1CDF62240048D3BA /* DYJsonRequestWithJsonResponseRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

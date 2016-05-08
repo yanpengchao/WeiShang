@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "PCTabBarViewController.h"
 
+const DDLogLevel ddLogLevel = DDLogLevelInfo;
+
 @interface AppDelegate ()
 
 @end
