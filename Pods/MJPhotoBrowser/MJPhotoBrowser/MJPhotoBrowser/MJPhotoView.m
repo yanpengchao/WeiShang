@@ -147,8 +147,8 @@
     // 基本尺寸参数
     CGFloat boundsWidth = self.bounds.size.width;
     CGFloat boundsHeight = self.bounds.size.height;
-    CGFloat imageWidth = _imageView.image.size.width;
-    CGFloat imageHeight = _imageView.image.size.height;
+    CGFloat imageWidth = _imageView.image.size.width*3;
+    CGFloat imageHeight = _imageView.image.size.height*3;
 	
 	// 设置伸缩比例
     CGFloat imageScale = boundsWidth / imageWidth;
